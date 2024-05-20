@@ -46,7 +46,6 @@ margin: 1rem;
 
 
 .menu{
-    height: qrem;
     width: 100%;
 }
 
@@ -176,6 +175,7 @@ margin: 1rem;
         border: none;
         text-align: center;
         width: 100%;
+        margin: 0;
     }
 
 }
