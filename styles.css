@@ -51,7 +51,7 @@ body {
 
 /* Estilo al pasar el mouse sobre cada elemento <li> */
 .navbar-links li:hover {
-    background-color: #55555594; /* Cambia el color de fondo al pasar el mouse */
+    background-color: #a3a3a394; /* Cambia el color de fondo al pasar el mouse */
     border-radius: 5px; /* Añade bordes redondeados */
 }
 
@@ -140,7 +140,7 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background: #33333382;
+        background: #333333d5;
         justify-content: center;
         align-items: center;
         z-index: 1000;
