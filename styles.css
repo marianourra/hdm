@@ -1,0 +1,228 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-links li {
+    margin: 0 1rem;
+}
+
+.menu{
+    height: 5rem;
+    width: 100%;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo al pasar el mouse sobre cada elemento <li> */
+.navbar-links li:hover {
+    background-color: #55555594; /* Cambia el color de fondo al pasar el mouse */
+    border-radius: 5px; /* Añade bordes redondeados */
+}
+
+/* Cambia el color del texto al pasar el mouse */
+.navbar-links li:hover a {
+    color: #60b8f3;
+}
+
+#logo {
+    height: 300%;
+    width: 30%;
+}
+
+.section {
+    padding: 2rem 1rem;
+    text-align: center;
+    min-height: 80vh; /* Each section occupies 80% of the viewport height */
+}
+
+.home {
+    background: #bde0fe;
+    color: #fff;
+}
+
+.about {
+    background: #ebeae7;
+}
+
+#hijos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gallery {
+    background:#333;
+    color: #fff;
+}
+
+.presentacion {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-self: center;
+    margin-left: 20%;
+    text-align: justify;
+}
+
+.contact {
+    background: #333;
+    color: #fff;
+}
+
+
+.footer {
+    background: #ebeae7;
+    color: #0c0c0c;
+    text-align: center;
+    flex-direction: column;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries */
+
+
+
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+
+    .navbar {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #33333382;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-close {
+        position: absolute;
+        top: 1.6rem;
+        right: 1.4rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .navbar-links li {
+        margin: 1rem 0;
+    }
+
+    .navbar-links a {
+        padding: 1rem;
+        border: none;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .navbar-close {
+        display: none; /* Oculta el botón de cerrar en pantallas más grandes */
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+     }
+     
+}
+
+
+
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Asegura que el contenido esté delante del video */
+    text-align: center;
+    color: #fff; /* Ajusta el color del texto para que sea legible en el video */
+    padding: 20px;
+}
+
+.reserva{
+    margin-top: 2rem;
+    color: #fff;
+    background-color: rgb(24, 0, 146);
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 6px;
+    transition: .3s ease all;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+
+#logofooter{
+    height: 10%;
+    width: 10%;
+}
