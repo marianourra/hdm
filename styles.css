@@ -12,12 +12,21 @@ body {
 
 .navbar {
     display: flex;
-    padding: 1rem;
     background: #333;
     color: #fff;
     justify-content: center;
     flex-direction: column;
 }
+
+.navbar a {
+margin: 1rem;
+
+}
+
+.navbar a li {
+    padding: 1.5rem;
+    
+    }
 
 .navbar-brand {
     display: flex;
@@ -35,12 +44,9 @@ body {
     display: flex;
 }
 
-.navbar-links li {
-    margin: 0 1rem;
-}
 
 .menu{
-    height: 5rem;
+    height: qrem;
     width: 100%;
 }
 
@@ -126,7 +132,11 @@ body {
         display: block;
     }
 
+    .menu{
+        height: 5rem;
+        width: 100%;
 
+    }
     .navbar {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -157,11 +167,9 @@ body {
         font-size: 2rem;
         cursor: pointer;
         color: #fff;
+        padding: 1rem;
     }
 
-    .navbar-links li {
-        margin: 1rem 0;
-    }
 
     .navbar-links a {
         padding: 1rem;
