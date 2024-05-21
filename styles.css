@@ -298,3 +298,7 @@ a i.fa-envelope:hover {
     transform: scale(2); /* Escalar el icono en hover */
 }
 
+#peru {
+    width: 4rem;
+    height: 3rem;
+}
