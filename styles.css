@@ -243,3 +243,19 @@ body {
 dl, ol, ul {
     margin:0
 }
+
+.card-body{
+    text-align: justify;
+}
+
+.btn {
+    font-weight:bold;
+}
+
+.card{
+    margin-top: 0.2rem;
+}
+
+.bullets{
+    margin-top: 1rem;
+}
