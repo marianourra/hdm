@@ -107,13 +107,13 @@ body {
 
 
 .footer {
-    background: #ebeae7;
+    background: #c4c3c0;
     color: #0c0c0c;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     padding: 1rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -258,4 +258,40 @@ dl, ol, ul {
 
 .bullets{
     margin-top: 1rem;
+}
+
+.redes{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.iconosRedes i{
+ margin-left: 1.5rem;
+ margin-top: 1rem;
+    font-size: 2rem;
+}
+
+a i {
+    color: #020202; /* Color de Instagram */
+    transform: scale(1.4); /* Escalar el icono en hover */   
+}
+
+/* Efecto hover para Instagram */
+a i.fa-instagram:hover {
+    color: #e4405f; /* Color de Instagram */
+    transform: scale(1.4); /* Escalar el icono en hover */
+
+}
+
+/* Efecto hover para WhatsApp */
+a i.fa-whatsapp:hover {
+    color: #25d366; /* Color de WhatsApp */
+    transform: scale(1.4); /* Escalar el icono en hover */
+}
+
+/* Efecto hover para Email */
+a i.fa-envelope:hover {
+    color: #0072c6; /* Color para email */
+    transform: scale(1.4); /* Escalar el icono en hover */
 }
