@@ -264,13 +264,14 @@ dl, ol, ul {
 .redes{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
 .iconosRedes i{
- margin-left: 1.5rem;
+ margin-left: 1.3rem;
  margin-top: 1rem;
-    font-size: 2rem;
 }
 
 a i {
