@@ -282,19 +282,19 @@ a i {
 /* Efecto hover para Instagram */
 a i.fa-instagram:hover {
     color: #e4405f; /* Color de Instagram */
-    transform: scale(1.4); /* Escalar el icono en hover */
+    transform: scale(2); /* Escalar el icono en hover */
 
 }
 
 /* Efecto hover para WhatsApp */
 a i.fa-whatsapp:hover {
     color: #25d366; /* Color de WhatsApp */
-    transform: scale(1.4); /* Escalar el icono en hover */
+    transform: scale(2); /* Escalar el icono en hover */
 }
 
 /* Efecto hover para Email */
 a i.fa-envelope:hover {
     color: #0072c6; /* Color para email */
-    transform: scale(1.4); /* Escalar el icono en hover */
+    transform: scale(2); /* Escalar el icono en hover */
 }
 
