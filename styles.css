@@ -307,3 +307,32 @@ a i.fa-envelope:hover {
     width: 4rem;
     height: 3rem;
 }
+
+
+.image-container {
+    width: 50%;
+    height: 15%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover; /* This ensures the image covers the container while maintaining aspect ratio */
+    border-radius: 50%;
+}
+
+/* Media Queries for responsive adjustments */
+@media (max-width: 768px) {
+    .image-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container {
+        width: 100%;
+    }
+}
+
