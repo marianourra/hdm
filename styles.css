@@ -347,3 +347,13 @@ a i.fa-envelope:hover {
     opacity: 1; /* Estado final */
     transform: translateY(0); /* Estado final */
 }
+
+.contenedor-cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.equipo {
+    
+}
