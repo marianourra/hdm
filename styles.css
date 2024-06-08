@@ -427,3 +427,12 @@ a i.fa-envelope:hover {
         opacity: 1;
     }
 }
+
+
+.logofooter {
+    transition: transform 0.3s ease;
+  }
+  
+  .logofooter:hover {
+    transform: scale(1.1);
+  }
