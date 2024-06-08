@@ -231,7 +231,7 @@ body {
 }
 
 
-#logofooter{
+.logofooter{
     height: 10%;
     width: 10%;
 }
@@ -434,4 +434,30 @@ a i.fa-envelope:hover {
 
 .card-title {
     text-align: center;
+}
+
+
+.navbar-brand {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+}
+
+
+.content h1,
+.content h2,
+.content p {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
