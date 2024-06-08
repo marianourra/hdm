@@ -381,14 +381,57 @@ a i.fa-envelope:hover {
 }
 
 .presentacion {
-    white-space: pre-wrap; /* preserve whitespace */
-    overflow: hidden; /* hide overflow */
-    text-align: justify; /* keep text justified */
-    font-family: sans-serif; /* use your preferred font */
-    border-right: 0.15em solid transparent; /* cursor, invisible but space reserved */
+    display: inline-block;
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+    
 }
 
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: orange; }
+.typing-container {
+    white-space: pre-wrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.typing-text {
+    display: inline-block;
+    animation: typing 6s steps(40, end) 1s 1 normal both, blink 0.75s step-end infinite;
+    white-space: pre-wrap;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
+@media (max-width: 576px) {
+    .presentacion {
+        font-size: 0.9rem;
+    }
+    .typing-container {
+        overflow: hidden;
+    }
+    .typing-text {
+        white-space: normal;
+        word-break: break-word;
+    }
+}
+
+
+.card-title {
+    text-align: center;
 }
