@@ -506,6 +506,28 @@ a i.fa-envelope:hover {
 
 
 .servicios{
-    width: 50%;
-    height: 10%;
+    width: 60%;
+    height: 30%;
 }
+
+@media screen and (min-width: 768px) {
+    .servicios {
+        width: 30%; /* Ajusta el ancho al 50% */
+        height: 10%; /* Ajusta la altura al 25% */
+    }
+}
+
+.fotosvarias{
+    background-color: #333;
+    justify-content: center;
+    width: 100%
+
+}
+
+.pasarela{
+    width: 60%;
+    height: 20%;
+    margin-left: 15%;
+}
+
+
