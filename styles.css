@@ -369,3 +369,26 @@ a i.fa-envelope:hover {
 #home{
     background-color: #02020275;
 }
+
+.animated-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de hover: aumentar tamaño y añadir sombra fuerte */
+.animated-card:hover {
+    transform: scale(1.05); /* Aumentar el tamaño de la card */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Añadir sombra fuerte */
+}
+
+.presentacion {
+    white-space: pre-wrap; /* preserve whitespace */
+    overflow: hidden; /* hide overflow */
+    text-align: justify; /* keep text justified */
+    font-family: sans-serif; /* use your preferred font */
+    border-right: 0.15em solid transparent; /* cursor, invisible but space reserved */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
