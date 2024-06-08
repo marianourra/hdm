@@ -446,3 +446,29 @@ a i.fa-envelope:hover {
   .card-title{
     font-family: "DM Serif Text", serif;
   }
+
+
+  .card img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.card:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.card .card-text {
+    display: none;
+    transition: display 0.5s ease;
+}
+
+.card.show-description .card-text {
+    display: block;
+}
+
+.card.show-description img {
+    filter: grayscale(0%);
+}
