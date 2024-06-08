@@ -208,8 +208,6 @@ body {
 }
 
 
-
-
 .background-video {
     position: fixed;
     top: 0;
@@ -437,23 +435,7 @@ a i.fa-envelope:hover {
   .logofooter:hover {
     transform: scale(1.1);
   }
-
-  .video-container{
-    margin-top: 1rem;
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25%; /* Proporción 16:9 */
-        overflow: hidden;
-    }
-    
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
+ 
 
   .card-title{
     font-family: "DM Serif Text", serif;
@@ -483,4 +465,37 @@ a i.fa-envelope:hover {
 
 .card.show-description img {
     filter: grayscale(0%);
+}
+
+.iframe-box{
+    width: 80%;
+}
+
+
+/* Estilo del contenedor del video */
+.iframe-box {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Proporción 16:9 */
+}
+
+/* Estilo del iframe del video */
+.iframe-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    /* Estilo del contenedor del video para vista desktop */
+    .iframe-box {
+        padding-top: 0; /* Elimina la proporción 16:9 */
+        width: 672px; /* Ancho original del iframe */
+        height: 378px; /* Altura original del iframe */
+        margin-left: 28%;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }
