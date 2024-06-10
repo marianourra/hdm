@@ -62,19 +62,3 @@ const x = setInterval(function() {
   }
 }, 1000);
 
-
-
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const serviceID = 'service_4pdd21l'; // Reemplaza con tu service_id de EmailJS
-    const templateID = 'template_c9rww15'; // Reemplaza con tu template_id de EmailJS
-
-    emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
-            alert('Mensaje enviado exitosamente!');
-            document.getElementById('contactForm').reset();
-        }, (err) => {
-            alert(JSON.stringify(err));
-        });
-});
