@@ -6,6 +6,10 @@
     font-family: "DM Serif Text", serif;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 .dm-serif-text-regular {
     font-family: "DM Serif Text", serif;
     font-weight: 400;
@@ -532,3 +536,10 @@ a i.fa-envelope:hover {
 }
 
 
+.contactito {
+ margin-bottom: 1rem;
+}
+
+.copyright {
+    margin-top: 0.5rem;
+}
