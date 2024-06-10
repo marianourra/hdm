@@ -290,18 +290,22 @@
     </section>
 
 
-    <!-- <div>
-        <div class="elfsight-app-95e187d2-a4d3-4eac-b7f4-619c9756619c" data-elfsight-app-lazy></div>
-    </div> -->
-
-
 
     <section id="reloj" class="section reloj">
-        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-        <div class="elfsight-app-f357c5be-2a69-4457-b908-4631c5e013ed" data-elfsight-app-lazy></div>
+
+        <div id="countdown-container">
+            <h1>Nos vemos pronto!</h1>
+            <div id="countdown">
+                <div><span id="days"></span>Días</div>
+                <div><span id="hours"></span>Horas</div>
+                <div><span id="minutes"></span>Minutos</div>
+                <div><span id="seconds"></span>Segundos</div>
+            </div>
+        </div>
 
         <button class="reserva" onclick="enviarCorreo()">Reservá tu lugar ahora!</button>
-        <script>
+       
+       <script>
             function enviarCorreo() {
                 // Dirección de correo electrónico predeterminada
                 var destinatario = "hijosdelmarsurftrip@gmail.com";
@@ -320,7 +324,47 @@
     <section id="contact" class="section about">
         <h2>Contacto</h2>
         <p class="contactito">Contactanos para más información.</p>
-        <div class="elfsight-app-d0d092bb-dc10-40a1-97ba-1a020b5c9550" data-elfsight-app-lazy></div>
+
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            (function() {
+                emailjs.init('VusqYbeKiY0F4UlTl'); // Reemplaza YOUR_USER_ID con tu user_id de EmailJS
+            })();
+        </script>
+    </head>
+    <body>
+        <div class="contact-form">
+            <h2>Contáctanos</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="surname">Apellido:</label>
+                    <input type="text" id="surname" name="surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comentarios:</label>
+                    <textarea id="comments" name="comments" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+
+
+
+         <!-- <div class="elfsight-app-d0d092bb-dc10-40a1-97ba-1a020b5c9550" data-elfsight-app-lazy></div> -->
     </section>
 
 
@@ -366,6 +410,17 @@
     </script>`
 
     <script type="text/javascript" src="./script.js"></script>	
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init({
+                publicKey: 'YOUR_PUBLIC_KEY',
+                blockHeadless: true
+            });
+        })();
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
