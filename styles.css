@@ -652,3 +652,7 @@ button {
 button:hover {
     background-color: rgb(0, 119, 255);
 }
+
+.touch{
+    margin-top: 1rem;
+}
