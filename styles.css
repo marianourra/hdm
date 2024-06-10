@@ -668,3 +668,15 @@ button:hover {
     width: 8rem;
     height: 8rem;
 }
+
+@media (max-width: 768px) {
+    .contenedor-cards .col-12.col-md-3 {
+        flex: 0 0 90%; /* Reduce el ancho de las cards */
+        max-width: 90%; /* Reduce el ancho de las cards */
+        margin: 0 auto; /* Centra las cards */
+    }
+    
+    .contenedor-cards .card {
+        transform: scale(0.9); /* Reduce el tamaño de las cards */
+    }
+}
