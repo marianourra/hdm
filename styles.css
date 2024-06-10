@@ -656,3 +656,15 @@ button:hover {
 .touch{
     margin-top: 1rem;
 }
+
+.contactopier {
+    margin-top: 1.3rem;
+    width: 8rem;
+    height: 8rem;
+
+}
+
+.call {
+    width: 8rem;
+    height: 8rem;
+}
