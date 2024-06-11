@@ -439,7 +439,11 @@ a i.fa-envelope:hover {
   }
 
 
-  .card img {
+  .card-title {
+    font-family: "DM Serif Text", serif;
+}
+
+.card img {
     width: 100%;
     height: auto;
     filter: grayscale(100%);
@@ -453,16 +457,20 @@ a i.fa-envelope:hover {
 
 .card .card-text {
     display: none;
-    transition: display 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
 }
 
 .card.show-description .card-text {
     display: block;
+    max-height: 1000px; /* Arbitrary large value to ensure the content is fully visible */
 }
 
 .card.show-description img {
     filter: grayscale(0%);
 }
+
 
 .iframe-box{
     width: 80%;
