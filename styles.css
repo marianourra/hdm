@@ -234,10 +234,8 @@ body {
     text-align: justify;
     margin-top: 3rem;
     margin-bottom: 4rem;
-    font-family: Poppins;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.1rem;
+    font-family: Caveat;
+    font-size: 1.6rem;
 }
 
 .contact {
@@ -799,3 +797,4 @@ button:hover {
         transform: scale(0.9); /* Reduce el tamaño de las cards */
     }
 }
+
