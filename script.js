@@ -31,7 +31,7 @@ function toggleDescription(card) {
 
 
 // Set the date we're counting down to
-const countdownDate = new Date("Oct 15, 2024 00:00:00").getTime();
+const countdownDate = new Date("Mar 15, 2025 00:00:00").getTime();
 
 // Update the count down every 1 second
 const x = setInterval(function() {
