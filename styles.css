@@ -1027,3 +1027,15 @@ button:hover {
         margin: 0;
     }
 }
+
+.translate{
+position: absolute;
+right: 2rem;
+
+}
+
+.translation{
+ height: 1.5rem;
+ width: 2rem;
+ margin-right: 1rem;
+}
