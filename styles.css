@@ -1110,6 +1110,14 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
+@media (max-width: 600px) {
+.translation{
+    position: absolute;
+    left: 1rem;
+    
+}
+}
+
 
 /* Efecto hover para ampliar la imagen */
 .translation:hover {
