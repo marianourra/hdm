@@ -1067,8 +1067,9 @@ button:hover {
 @media (max-width: 600px) {
     .sliding-rectangle {
         width: 90vw;
-        height: 30vh;
+        height: 32vh;
         margin-left: 1.2rem;
+        top: 15rem;
         /* Ajusta el ancho del rectángulo para pantallas más pequeñas */
     }
 
