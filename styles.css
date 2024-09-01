@@ -999,14 +999,14 @@ button:hover {
 
 .carousel {
     display: flex;
-    width: calc(100% * 2.5);
+    width: calc(100% * 5);
     /* Ajusta el número de imágenes */
     animation: scroll 60s linear infinite;
     /* Duración de la animación para pantallas grandes */
 }
 
 .carousel img {
-    width: 16%;
+    width: 10%;
     /* Debe ser 100% dividido entre el número de imágenes */
     object-fit: contain;
 }
@@ -1115,4 +1115,10 @@ button:hover {
 .translation:hover {
     transform: scale(1.1);
     /* Amplía la imagen un 10% */
+}
+
+@media (max-width: 600px) {
+    .carousel {
+        animation: scroll 20s linear infinite; /* Animación más rápida en pantallas pequeñas */
+    }
 }
