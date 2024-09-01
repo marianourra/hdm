@@ -358,7 +358,20 @@ body {
     margin-top: 3rem;
     margin-bottom: 4rem;
     font-family: Roboto;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+}
+
+.presentacion2 {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-self: center;
+    margin-left: 3%;
+    text-align: justify;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    font-family: Roboto;
+    font-size: 1.1rem;
 }
 
 .contact {
@@ -965,28 +978,28 @@ button:hover {
 }
 
 
-/* Contenedor para el rectángulo deslizante */
-.sliding-container {
-    position: relative;
-    width: 100%;
-    height: 10rem; /* Altura del contenedor */
-    overflow: hidden; /* Esconde el contenido que se desliza fuera del contenedor */
-}
 
 /* Estilo general del rectángulo */
 .sliding-rectangle {
     position: absolute;
     left: -100%; /* Comienza fuera de la pantalla desde la izquierda */
     top: 20rem; /* Posiciona el rectángulo desde el borde superior del contenedor */
-    height: 10rem;
-    width: 80vw; /* Ancho del rectángulo ajustado a un porcentaje del viewport width */
+    height: 14rem;
+    width: 50vw; /* Ancho del rectángulo ajustado a un porcentaje del viewport width */
     background-color: #0773d25e; /* Fondo blanco semi-transparente */
     transition: transform 0.5s ease-out; /* Transición suave de 0.5 segundos */
+    
 }
+
+.sliding-rectangle:hover {
+    background-color: #0773d299; /* Cambia el color de fondo al pasar el mouse */
+    border-radius: 5px; /* Añade bordes redondeados */
+}
+
 
 /* Clase para hacer visible el rectángulo al deslizarlo */
 .sliding-rectangle.visible {
-    transform: translateX(100%); /* Mueve el rectángulo a su posición final pegado al borde izquierdo */
+    transform: translateX(190%); /* Mueve el rectángulo a su posición final pegado al borde izquierdo */
 }
 
 /* Media queries para dispositivos móviles */
@@ -997,5 +1010,20 @@ button:hover {
 
     .sliding-rectangle.visible {
         transform: translateX(90%); /* Ajusta la posición final para pantallas más pequeñas */
+    }
+}
+
+
+@media (max-width: 600px) {
+    .carousel img {
+        width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+        height: 50vh; /* Mantiene la proporción de la imagen */
+        object-fit: cover; /* Escala la imagen para que cubra todo el espacio del contenedor */
+    }
+
+    /* Opcional: ajusta el carrusel para que no haya espacio lateral */
+    .carousel {
+        padding: 0;
+        margin: 0;
     }
 }
