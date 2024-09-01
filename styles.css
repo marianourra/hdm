@@ -1038,4 +1038,11 @@ right: 2rem;
  height: 1.5rem;
  width: 2rem;
  margin-right: 1rem;
+ transition: transform 0.3s ease;
+}
+
+
+/* Efecto hover para ampliar la imagen */
+.translation:hover {
+    transform: scale(1.1); /* Amplía la imagen un 10% */
 }
