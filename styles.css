@@ -13,251 +13,251 @@ p {
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: normal;
-  }
-  
-  .merriweather-regular {
+}
+
+.merriweather-regular {
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .merriweather-bold {
+}
+
+.merriweather-bold {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .merriweather-black {
+}
+
+.merriweather-black {
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: normal;
-  }
-  
-  .merriweather-light-italic {
+}
+
+.merriweather-light-italic {
     font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: italic;
-  }
-  
-  .merriweather-regular-italic {
+}
+
+.merriweather-regular-italic {
     font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-  .merriweather-bold-italic {
+}
+
+.merriweather-bold-italic {
     font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-  .merriweather-black-italic {
+}
+
+.merriweather-black-italic {
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
-  }
-  
+}
+
 
 .roboto-thin {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
-  
-  .roboto-light {
+}
+
+.roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
-  
-  .roboto-regular {
+}
+
+.roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .roboto-medium {
+}
+
+.roboto-medium {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-  }
-  
-  .roboto-bold {
+}
+
+.roboto-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .roboto-black {
+}
+
+.roboto-black {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
-  }
-  
-  .roboto-thin-italic {
+}
+
+.roboto-thin-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: italic;
-  }
-  
-  .roboto-light-italic {
+}
+
+.roboto-light-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: italic;
-  }
-  
-  .roboto-regular-italic {
+}
+
+.roboto-regular-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-  .roboto-medium-italic {
+}
+
+.roboto-medium-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: italic;
-  }
-  
-  .roboto-bold-italic {
+}
+
+.roboto-bold-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-  .roboto-black-italic {
+}
+
+.roboto-black-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: italic;
-  }
-  
+}
+
 
 
 .dm-serif-text-regular {
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: normal;
-  }
+}
 
-  .caveat {
+.caveat {
     font-family: "Caveat";
     font-optical-sizing: auto;
     font-style: normal;
-  }
-  
-  .dm-serif-text-regular-italic {
+}
+
+.dm-serif-text-regular-italic {
     font-family: "DM Serif Text", serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-  .poppins-thin {
+}
+
+.poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
-  
-  .poppins-extralight {
+}
+
+.poppins-extralight {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
-  }
-  
-  .poppins-light {
+}
+
+.poppins-light {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
-  
-  .poppins-regular {
+}
+
+.poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .poppins-medium {
+}
+
+.poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-  }
-  
-  .poppins-semibold {
+}
+
+.poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
-  }
-  
-  .poppins-bold {
+}
+
+.poppins-bold {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .poppins-extrabold {
+}
+
+.poppins-extrabold {
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: normal;
-  }
-  
-  .poppins-black {
+}
+
+.poppins-black {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: normal;
-  }
-  
-  .poppins-thin-italic {
+}
+
+.poppins-thin-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: italic;
-  }
-  
-  .poppins-extralight-italic {
+}
+
+.poppins-extralight-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: italic;
-  }
-  
-  .poppins-light-italic {
+}
+
+.poppins-light-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: italic;
-  }
-  
-  .poppins-regular-italic {
+}
+
+.poppins-regular-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-  .poppins-medium-italic {
+}
+
+.poppins-medium-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: italic;
-  }
-  
-  .poppins-semibold-italic {
+}
+
+.poppins-semibold-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: italic;
-  }
-  
-  .poppins-bold-italic {
+}
+
+.poppins-bold-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-  .poppins-extrabold-italic {
+}
+
+.poppins-extrabold-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: italic;
-  }
-  
-  .poppins-black-italic {
+}
+
+.poppins-black-italic {
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: italic;
-  }
-  
+}
+
 
 
 
@@ -276,8 +276,8 @@ body {
 
 .navbar a li {
     padding: 1.5rem;
-    
-    }
+
+}
 
 .navbar-brand {
     display: flex;
@@ -297,7 +297,7 @@ body {
 }
 
 
-.menu{
+.menu {
     width: 100%;
 }
 
@@ -308,8 +308,10 @@ body {
 
 /* Estilo al pasar el mouse sobre cada elemento <li> */
 .navbar-links li:hover {
-    background-color: #a3a3a394; /* Cambia el color de fondo al pasar el mouse */
-    border-radius: 5px; /* Añade bordes redondeados */
+    background-color: #a3a3a394;
+    /* Cambia el color de fondo al pasar el mouse */
+    border-radius: 5px;
+    /* Añade bordes redondeados */
 }
 
 /* Cambia el color del texto al pasar el mouse */
@@ -325,7 +327,8 @@ body {
 .section {
     padding: 2rem 1rem;
     text-align: center;
-    min-height: 80vh; /* Each section occupies 80% of the viewport height */
+    min-height: 80vh;
+    /* Each section occupies 80% of the viewport height */
 }
 
 .home {
@@ -344,7 +347,7 @@ body {
 }
 
 .gallery {
-    background:#333;
+    background: #333;
     color: #fff;
 }
 
@@ -401,15 +404,16 @@ body {
         display: block;
     }
 
-    #logo{
+    #logo {
         margin-left: 4rem;
     }
 
-    .menu{
+    .menu {
         height: 5rem;
         width: 100%;
 
     }
+
     .navbar {
         flex-direction: row;
         flex-wrap: nowrap;
@@ -456,13 +460,15 @@ body {
 
 @media (min-width: 769px) {
     .navbar-close {
-        display: none; /* Oculta el botón de cerrar en pantallas más grandes */
+        display: none;
+        /* Oculta el botón de cerrar en pantallas más grandes */
     }
-    .footer{
+
+    .footer {
         display: flex;
         align-items: center;
-     }
-     
+    }
+
 }
 
 
@@ -473,7 +479,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1; /* Asegura que el video esté detrás del contenido */
+    z-index: -1;
+    /* Asegura que el video esté detrás del contenido */
 }
 
 .content {
@@ -481,85 +488,98 @@ body {
     font-weight: 400;
     font-style: normal;
     position: relative;
-    z-index: 1; /* Asegura que el contenido esté delante del video */
+    z-index: 1;
+    /* Asegura que el contenido esté delante del video */
     text-align: center;
-    color: #fff; /* Ajusta el color del texto para que sea legible en el video */
+    color: #fff;
+    /* Ajusta el color del texto para que sea legible en el video */
     padding: 20px;
 }
 
 
 
-.logofooter{
+.logofooter {
     height: 6rem;
     width: 6rem;
 }
 
 #bulletpoints {
-   text-align: justify;
-   padding: 2rem 1rem;
-   min-height: 80vh; /* Each section occupies 80% of the viewport height */
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-
-}
-
-dl, ol, ul {
-    margin:0
-}
-
-.card-body{
     text-align: justify;
-}
-
-.btn {
-    font-weight:bold;
-}
-
-.card{
-    margin-top: 0.2rem;
-}
-
-.bullets{
-    margin-top: 1rem;
-}
-
-.redes{
+    padding: 2rem 1rem;
+    min-height: 80vh;
+    /* Each section occupies 80% of the viewport height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.iconosRedes i{
- margin-left: 1.3rem;
- margin-top: 1rem;
+dl,
+ol,
+ul {
+    margin: 0
+}
+
+.card-body {
+    text-align: justify;
+}
+
+.btn {
+    font-weight: bold;
+}
+
+.card {
+    margin-top: 0.2rem;
+}
+
+.bullets {
+    margin-top: 1rem;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iconosRedes i {
+    margin-left: 1.3rem;
+    margin-top: 1rem;
 }
 
 a i {
-    color: #020202; /* Color de Instagram */
-    transform: scale(1.4); /* Escalar el icono en hover */   
+    color: #020202;
+    /* Color de Instagram */
+    transform: scale(1.4);
+    /* Escalar el icono en hover */
 }
 
 /* Efecto hover para Instagram */
 a i.fa-instagram:hover {
-    color: #e4405f; /* Color de Instagram */
-    transform: scale(2); /* Escalar el icono en hover */
+    color: #e4405f;
+    /* Color de Instagram */
+    transform: scale(2);
+    /* Escalar el icono en hover */
 
 }
 
 /* Efecto hover para WhatsApp */
 a i.fa-whatsapp:hover {
-    color: #25d366; /* Color de WhatsApp */
-    transform: scale(2); /* Escalar el icono en hover */
+    color: #25d366;
+    /* Color de WhatsApp */
+    transform: scale(2);
+    /* Escalar el icono en hover */
 }
 
 /* Efecto hover para Email */
 a i.fa-envelope:hover {
-    color: #0072c6; /* Color para email */
-    transform: scale(2); /* Escalar el icono en hover */
+    color: #0072c6;
+    /* Color para email */
+    transform: scale(2);
+    /* Escalar el icono en hover */
 }
 
 #peru {
@@ -578,7 +598,8 @@ a i.fa-envelope:hover {
 .image-container img {
     width: 100%;
     height: 60vh;
-    object-fit: cover; /* This ensures the image covers the container while maintaining aspect ratio */
+    object-fit: cover;
+    /* This ensures the image covers the container while maintaining aspect ratio */
     border-radius: 50%;
 }
 
@@ -597,14 +618,18 @@ a i.fa-envelope:hover {
 
 /* Animaciones para las cards */
 .animated-card {
-    opacity: 0; /* Estado inicial */
-    transform: translateY(20px); /* Estado inicial */
+    opacity: 0;
+    /* Estado inicial */
+    transform: translateY(20px);
+    /* Estado inicial */
     transition: opacity 1.2s ease-out, transform 1.2s ease-out;
 }
 
 .animated-card.show {
-    opacity: 1; /* Estado final */
-    transform: translateY(0); /* Estado final */
+    opacity: 1;
+    /* Estado final */
+    transform: translateY(0);
+    /* Estado final */
 }
 
 .contenedor-cards {
@@ -614,18 +639,18 @@ a i.fa-envelope:hover {
 }
 
 .equipo {
- margin-top: 1rem;
+    margin-top: 1rem;
 }
 
-.iconos{
+.iconos {
     color: transparent;
 }
 
-.reloj{
+.reloj {
     background-color: #02020275;
 }
 
-#home{
+#home {
     background-color: #02020275;
 }
 
@@ -635,8 +660,10 @@ a i.fa-envelope:hover {
 
 /* Efecto de hover: aumentar tamaño y añadir sombra fuerte */
 .animated-card:hover {
-    transform: scale(1.05); /* Aumentar el tamaño de la card */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Añadir sombra fuerte */
+    transform: scale(1.05);
+    /* Aumentar el tamaño de la card */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    /* Añadir sombra fuerte */
 }
 
 
@@ -665,6 +692,7 @@ a i.fa-envelope:hover {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -673,19 +701,19 @@ a i.fa-envelope:hover {
 
 .logofooter {
     transition: transform 0.3s ease;
-  }
-  
-  .logofooter:hover {
+}
+
+.logofooter:hover {
     transform: scale(1.1);
-  }
- 
+}
 
-  .card-title{
+
+.card-title {
     font-family: "DM Serif Text", serif;
-  }
+}
 
 
-  .card-title {
+.card-title {
     font-family: "DM Serif Text", serif;
 }
 
@@ -710,7 +738,8 @@ a i.fa-envelope:hover {
 
 .card.show-description .card-text {
     display: block;
-    max-height: 1000px; /* Arbitrary large value to ensure the content is fully visible */
+    max-height: 1000px;
+    /* Arbitrary large value to ensure the content is fully visible */
 }
 
 .card.show-description img {
@@ -718,7 +747,7 @@ a i.fa-envelope:hover {
 }
 
 
-.iframe-box{
+.iframe-box {
     width: 80%;
 }
 
@@ -727,7 +756,8 @@ a i.fa-envelope:hover {
 .iframe-box {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* Proporción 16:9 */
+    padding-top: 56.25%;
+    /* Proporción 16:9 */
 }
 
 /* Estilo del iframe del video */
@@ -743,38 +773,43 @@ a i.fa-envelope:hover {
 }
 
 @media screen and (min-width: 768px) {
+
     /* Estilo del contenedor del video para vista desktop */
     .iframe-box {
-        padding-top: 0; /* Elimina la proporción 16:9 */
-        width: 672px; /* Ancho original del iframe */
-        height: 378px; /* Altura original del iframe */
+        padding-top: 0;
+        /* Elimina la proporción 16:9 */
+        width: 672px;
+        /* Ancho original del iframe */
+        height: 378px;
+        /* Altura original del iframe */
         margin-left: 28%;
         margin-top: 1rem;
-        margin-bottom:3.5rem;
+        margin-bottom: 3.5rem;
     }
 }
 
 
-.servicios{
+.servicios {
     width: 60%;
     height: 30%;
 }
 
 @media screen and (min-width: 768px) {
     .servicios {
-        width: 30%; /* Ajusta el ancho al 50% */
-        height: 10%; /* Ajusta la altura al 25% */
+        width: 30%;
+        /* Ajusta el ancho al 50% */
+        height: 10%;
+        /* Ajusta la altura al 25% */
     }
 }
 
-.fotosvarias{
+.fotosvarias {
     background-color: #333;
     justify-content: center;
     width: 100%
-
 }
 
-.pasarela{
+.pasarela {
     width: 60%;
     height: 20%;
     margin-left: 15%;
@@ -782,14 +817,14 @@ a i.fa-envelope:hover {
 
 
 .contactito {
- margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
 .copyright {
     margin-top: 0.5rem;
 }
 
-.subtitulos{
+.subtitulos {
     font-family: "DM Serif Text", serif;
 }
 
@@ -907,7 +942,7 @@ button:hover {
     background-color: rgb(0, 119, 255);
 }
 
-.touch{
+.touch {
     margin-top: 1rem;
 }
 
@@ -925,28 +960,33 @@ button:hover {
 
 @media (max-width: 768px) {
     .contenedor-cards .col-12.col-md-3 {
-        flex: 0 0 90%; /* Reduce el ancho de las cards */
-        max-width: 90%; /* Reduce el ancho de las cards */
-        margin: 0 auto; /* Centra las cards */
+        flex: 0 0 90%;
+        /* Reduce el ancho de las cards */
+        max-width: 90%;
+        /* Reduce el ancho de las cards */
+        margin: 0 auto;
+        /* Centra las cards */
     }
-    
+
     .contenedor-cards .card {
-        transform: scale(0.9); /* Reduce el tamaño de las cards */
+        transform: scale(0.9);
+        /* Reduce el tamaño de las cards */
     }
 }
 
-.fuente-description{
+.fuente-description {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
 }
 
-.sh{
+.sh {
     width: 30rem;
-    height: 20rem; /* Altura fija de 200px */
+    height: 20rem;
+    /* Altura fija de 200px */
 }
 
-.top{
+.top {
     margin-top: 2rem;
 }
 
@@ -959,12 +999,15 @@ button:hover {
 
 .carousel {
     display: flex;
-    width: calc(100% * 2.5); /* Ajusta el número de imágenes */
-    animation: scroll 60s linear infinite; /* Duración de la animación para pantallas grandes */
+    width: calc(100% * 2.5);
+    /* Ajusta el número de imágenes */
+    animation: scroll 60s linear infinite;
+    /* Duración de la animación para pantallas grandes */
 }
 
 .carousel img {
-    width: 16%; /* Debe ser 100% dividido entre el número de imágenes */
+    width: 16%;
+    /* Debe ser 100% dividido entre el número de imágenes */
     object-fit: contain;
 }
 
@@ -973,6 +1016,7 @@ button:hover {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -981,7 +1025,8 @@ button:hover {
 /* Media query para pantallas móviles */
 @media (max-width: 600px) {
     .carousel {
-        animation: scroll 30s linear infinite; /* Animación más rápida en pantallas pequeñas */
+        animation: scroll 30s linear infinite;
+        /* Animación más rápida en pantallas pequeñas */
     }
 }
 
@@ -990,43 +1035,56 @@ button:hover {
 /* Estilo general del rectángulo */
 .sliding-rectangle {
     position: absolute;
-    left: -100%; /* Comienza fuera de la pantalla desde la izquierda */
-    top: 20rem; /* Posiciona el rectángulo desde el borde superior del contenedor */
+    left: -100%;
+    /* Comienza fuera de la pantalla desde la izquierda */
+    top: 20rem;
+    /* Posiciona el rectángulo desde el borde superior del contenedor */
     height: 14rem;
-    width: 50vw; /* Ancho del rectángulo ajustado a un porcentaje del viewport width */
-    background-color: #0773d25e; /* Fondo blanco semi-transparente */
-    transition: transform 0.5s ease-out; /* Transición suave de 0.5 segundos */
-    
+    width: 50vw;
+    /* Ancho del rectángulo ajustado a un porcentaje del viewport width */
+    background-color: #0773d25e;
+    /* Fondo blanco semi-transparente */
+    transition: transform 0.5s ease-out;
+    /* Transición suave de 0.5 segundos */
+
 }
 
 .sliding-rectangle:hover {
-    background-color: #0773d299; /* Cambia el color de fondo al pasar el mouse */
-    border-radius: 5px; /* Añade bordes redondeados */
+    background-color: #0773d299;
+    /* Cambia el color de fondo al pasar el mouse */
+    border-radius: 5px;
+    /* Añade bordes redondeados */
 }
 
 
 /* Clase para hacer visible el rectángulo al deslizarlo */
 .sliding-rectangle.visible {
-    transform: translateX(190%); /* Mueve el rectángulo a su posición final pegado al borde izquierdo */
+    transform: translateX(190%);
+    /* Mueve el rectángulo a su posición final pegado al borde izquierdo */
 }
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 600px) {
     .sliding-rectangle {
-        width: 90vw; /* Ajusta el ancho del rectángulo para pantallas más pequeñas */
+        width: 90vw;
+        /* Ajusta el ancho del rectángulo para pantallas más pequeñas */
     }
 
     .sliding-rectangle.visible {
-        transform: translateX(90%); /* Ajusta la posición final para pantallas más pequeñas */
+        transform: translateX(90%);
+        /* Ajusta la posición final para pantallas más pequeñas */
     }
 }
 
 
 @media (max-width: 600px) {
     .carousel img {
-        width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
-        height: 50vh; /* Mantiene la proporción de la imagen */
-        object-fit: cover; /* Escala la imagen para que cubra todo el espacio del contenedor */
+        width: 100%;
+        /* La imagen ocupa el 100% del ancho del contenedor */
+        height: 50vh;
+        /* Mantiene la proporción de la imagen */
+        object-fit: cover;
+        /* Escala la imagen para que cubra todo el espacio del contenedor */
     }
 
     /* Opcional: ajusta el carrusel para que no haya espacio lateral */
@@ -1036,21 +1094,22 @@ button:hover {
     }
 }
 
-.translate{
-z-index: 1;
+.translate {
+    z-index: 1;
 
 
 }
 
-.translation{
- height: 1.5rem;
- width: 2rem;
- margin-right: 1rem;
- transition: transform 0.3s ease;
+.translation {
+    height: 1.5rem;
+    width: 2rem;
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
 }
 
 
 /* Efecto hover para ampliar la imagen */
 .translation:hover {
-    transform: scale(1.1); /* Amplía la imagen un 10% */
+    transform: scale(1.1);
+    /* Amplía la imagen un 10% */
 }
