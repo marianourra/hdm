@@ -963,3 +963,18 @@ button:hover {
         transform: translateX(-100%);
     }
 }
+
+
+.sliding-rectangle {
+    position: absolute;
+    left: -60%; /* Inicia fuera de la pantalla desde la izquierda */
+    margin-top: 10rem;
+    height: 10rem;
+    width: 50rem;
+    background-color: #0773d24e;
+    transition: transform 0.5s ease-out; /* Transición suave de 0.5 segundos */
+}
+
+.sliding-rectangle.visible {
+    transform: translateX(100%); /* Mueve el rectángulo a su posición final */
+}

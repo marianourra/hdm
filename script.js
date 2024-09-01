@@ -60,3 +60,11 @@ const x = setInterval(function() {
   }
 }, 1000);
 
+
+window.addEventListener('load', function() {
+    var rectangle = document.querySelector('.sliding-rectangle');
+    setTimeout(function() {
+        rectangle.classList.add('visible'); // Agrega la clase 'visible' para iniciar la animación
+    }, 100); // Tiempo de espera antes de que comience el deslizamiento (100 ms en este caso)
+});
+
