@@ -1025,7 +1025,7 @@ button:hover {
 /* Media query para pantallas móviles */
 @media (max-width: 600px) {
     .carousel {
-        animation: scroll 30s linear infinite;
+        animation: scroll 150s linear infinite;
         /* Animación más rápida en pantallas pequeñas */
     }
 }
