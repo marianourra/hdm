@@ -1040,8 +1040,8 @@ button:hover {
     /* Comienza fuera de la pantalla desde la izquierda */
     top: 20rem;
     /* Posiciona el rectángulo desde el borde superior del contenedor */
-    height: 14rem;
-    width: 50vw;
+    height: 100%;
+    width: 50%;
     /* Ancho del rectángulo ajustado a un porcentaje del viewport width */
     background-color: #a6b9c95e;
     /* Fondo blanco semi-transparente */
