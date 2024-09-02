@@ -1026,6 +1026,7 @@ button:hover {
 @media (max-width: 600px) {
     .carousel {
         animation: scroll 150s linear infinite;
+        width: calc(100% * 10)
         /* Animación más rápida en pantallas pequeñas */
     }
 }
