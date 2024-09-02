@@ -1042,7 +1042,7 @@ button:hover {
     height: 14rem;
     width: 50vw;
     /* Ancho del rectángulo ajustado a un porcentaje del viewport width */
-    background-color: #0773d25e;
+    background-color: #a6b9c95e;
     /* Fondo blanco semi-transparente */
     transition: transform 0.5s ease-out;
     /* Transición suave de 0.5 segundos */
