@@ -414,9 +414,13 @@ body {
     .navbar-toggle {
         display: block;
     }
-
+/* 
     #logo {
         margin-left: 4rem;
+    } */
+
+    .translation{
+        margin-right: 4rem;
     }
 
     .menu {
