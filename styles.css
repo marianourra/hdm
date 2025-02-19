@@ -372,7 +372,18 @@ body {
     margin-left: 3%;
     text-align: justify;
     margin-top: 3rem;
-    margin-bottom: 4rem;
+    font-family: Roboto;
+    font-size: 1.1rem;
+}
+
+.presentacion2 {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-self: center;
+    margin-left: 3%;
+    text-align: justify;
+    margin-top: 3rem;
     font-family: Roboto;
     font-size: 1.1rem;
 }
@@ -1128,3 +1139,22 @@ button:hover {
     /* Amplía la imagen un 10% */
 }
 
+
+.chicama{
+ width: 60%;
+ height: 40%;
+}
+
+.negrita{
+    font-weight: bold;
+    justify-self: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.surfconditions{
+    margin: 0;
+    justify-content: center;
+    text-align:left;
+    padding: 10%;
+}
