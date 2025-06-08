@@ -118,14 +118,11 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 #hero {
-    height: 100vh;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
+    height: 100vh;
+    width: 100%;
     overflow: hidden;
+    background-color: #1a1a1a;
 }
 
 .background-video {
@@ -135,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: 0;
 }
 
 .hero-content {
@@ -208,7 +205,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Feature Cards */
 .feature-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 2rem;
@@ -216,6 +213,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
     margin-bottom: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .feature-card:hover {
@@ -337,7 +335,7 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(255, 255, 255, 0.95);
     padding: 2.5rem;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -442,6 +440,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-social {
     flex: 1;
     text-align: left;
+    color: white;
 }
 
 .footer-social a {
@@ -466,8 +465,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Social media icons in footer */
-.footer .iconosRedes i {
-    color: white;
+.footer .iconosRedes i,
+.footer .iconosRedes a i {
+    color: white !important;
     margin-left: 1.3rem;
     margin-top: 1rem;
     transform: scale(1.4);
@@ -475,18 +475,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Hover effects for footer social icons */
-.footer .iconosRedes i.fa-instagram:hover {
-    color: #e4405f;
+.footer .iconosRedes i.fa-instagram:hover,
+.footer .iconosRedes a:hover i.fa-instagram {
+    color: #e4405f !important;
     transform: scale(2);
 }
 
-.footer .iconosRedes i.fa-whatsapp:hover {
-    color: #25d366;
+.footer .iconosRedes i.fa-whatsapp:hover,
+.footer .iconosRedes a:hover i.fa-whatsapp {
+    color: #25d366 !important;
     transform: scale(2);
 }
 
-.footer .iconosRedes i.fa-envelope:hover {
-    color: #0072c6;
+.footer .iconosRedes i.fa-envelope:hover,
+.footer .iconosRedes a:hover i.fa-envelope {
+    color: #0072c6 !important;
     transform: scale(2);
 }
 
@@ -599,16 +602,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .content {
-    font-family: "DM Serif Text", serif;
-    font-weight: 400;
-    font-style: normal;
     position: relative;
     z-index: 1;
-    /* Asegura que el contenido esté delante del video */
     text-align: center;
     color: #fff;
-    /* Ajusta el color del texto para que sea legible en el video */
     padding: 20px;
+    margin-top: 15vh;
 }
 
 .logofooter {
@@ -625,6 +624,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #f8f9fa;
 }
 
 dl,
@@ -722,6 +722,9 @@ a i.fa-envelope:hover {
 @media (max-width: 768px) {
     .image-container {
         width: 90%;
+    }
+    .content {
+        margin-top: 10vh;
     }
 }
 
@@ -934,7 +937,7 @@ a i.fa-envelope:hover {
 
 #countdown-container {
     text-align: center;
-    background: #ffffff00;
+    background-color: #f8f9fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1957,5 +1960,59 @@ html {
     }
     .date-text {
         font-size: 0.9rem;
+    }
+}
+
+/* Section backgrounds */
+.about {
+    background-color: #f8f9fa;
+}
+
+#bulletpoints {
+    background-color: #f8f9fa;
+}
+
+#pricing {
+    background-color: #f0f4f8;
+}
+
+#contact {
+    background-color: #f8f9fa;
+}
+
+#countdown-container {
+    background-color: #f8f9fa;
+}
+
+/* Ajuste de colores de texto para mejor contraste */
+.about h2,
+#bulletpoints h2,
+#pricing h2,
+#contact h2 {
+    color: #2c3e50;
+}
+
+.about p,
+#bulletpoints p,
+#pricing p,
+#contact p {
+    color: #4a4a4a;
+}
+
+/* Ajuste de las cards para que destaquen sobre el fondo */
+.pricing-card {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste para dispositivos móviles */
+@media (max-width: 768px) {
+    .background-video {
+        height: 100%;
     }
 }
