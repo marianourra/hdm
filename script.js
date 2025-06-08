@@ -68,3 +68,152 @@ window.addEventListener('load', function() {
     }, 100); // Tiempo de espera antes de que comience el deslizamiento (100 ms en este caso)
 });
 
+// Navigation
+document.addEventListener('DOMContentLoaded', function() {
+    // Navegación móvil
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarLinks = document.getElementById('navbar-links');
+    const navbarClose = document.getElementById('navbar-close');
+
+        navbarToggle.addEventListener('click', () => {
+        navbarLinks.classList.add('active');
+        });
+
+        navbarClose.addEventListener('click', () => {
+            navbarLinks.classList.remove('active');
+        });
+
+    // Cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('.navbar-links a').forEach(link => {
+        link.addEventListener('click', () => {
+                navbarLinks.classList.remove('active');
+        });
+    });
+
+    // Botones de llamada a la acción
+    const bookButton = document.getElementById('bookButton');
+
+    bookButton.addEventListener('click', () => {
+        window.location.href = '#contact';
+    });
+
+    // Carrusel de imágenes
+    const carouselImages = document.querySelectorAll('.carousel-image');
+    const prevButtons = document.querySelectorAll('.carousel-prev');
+    const nextButtons = document.querySelectorAll('.carousel-next');
+    let currentIndex = 0;
+
+    function updateCarousel(index) {
+        carouselImages.forEach(img => img.classList.remove('active'));
+        carouselImages[index].classList.add('active');
+    }
+
+    prevButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + carouselImages.length) % carouselImages.length;
+            updateCarousel(currentIndex);
+        });
+    });
+
+    nextButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % carouselImages.length;
+            updateCarousel(currentIndex);
+        });
+    });
+
+    // Animaciones de scroll
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    fadeElements.forEach(element => {
+        observer.observe(element);
+    });
+
+    // Formulario de contacto
+    const contactForm = document.getElementById('contactForm');
+    const submitButton = document.getElementById('submitButton');
+
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Deshabilitar el botón durante el envío
+        submitButton.disabled = true;
+        submitButton.textContent = 'Enviando...';
+        
+        // Obtener los valores del formulario
+        const formData = {
+            from_name: document.getElementById('name').value,
+            from_email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+            to_name: 'Hijos del Mar'
+        };
+
+        // Enviar el email usando EmailJS
+        emailjs.send('service_0884mls', 'template_c9rww15', formData)
+            .then(function() {
+                alert('¡Gracias por contactarnos! Te responderemos pronto.');
+                contactForm.reset();
+            })
+            .catch(function(error) {
+                alert('Lo sentimos, hubo un error al enviar el mensaje. Por favor, intenta de nuevo.');
+                console.error('Error:', error);
+            })
+            .finally(function() {
+                submitButton.disabled = false;
+                submitButton.textContent = 'Enviar Mensaje';
+            });
+    });
+});
+
+// FAQ Toggle Functionality
+document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        const toggle = question.querySelector('.faq-toggle');
+        
+        // Toggle active class on answer
+        answer.classList.toggle('active');
+        
+        // Toggle active class on question
+        question.classList.toggle('active');
+        
+        // Toggle arrow rotation
+        toggle.classList.toggle('active');
+        
+        // Close other answers
+        document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+            if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
+                otherAnswer.classList.remove('active');
+                otherAnswer.previousElementSibling.classList.remove('active');
+                otherAnswer.previousElementSibling.querySelector('.faq-toggle').classList.remove('active');
+            }
+        });
+    });
+});
+
+// Initialize EmailJS
+(function() {
+    emailjs.init("VusqYbeKiY0F4UlTl");
+})();
+
+// Close popup when clicking the close button or outside the popup
+document.querySelector('.close-popup-btn').addEventListener('click', function() {
+    document.getElementById('confirmationPopup').classList.remove('active');
+});
+
+document.getElementById('confirmationPopup').addEventListener('click', function(e) {
+    if (e.target === this) {
+        this.classList.remove('active');
+    }
+});
+
