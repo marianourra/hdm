@@ -4,484 +4,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <title>Hijos del Mar - Surftrip a Perú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Chicama Surf Trip - La Ola Más Larga del Mundo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
     <link rel="icon" href="./logos/logowhite.PNG" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("VusqYbeKiY0F4UlTl");
+        })();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <header>
-
         <nav class="navbar">
-            <a href="index.html">
-                <div class="navbar-brand"><img id="logo" src="./logos/logowhite.PNG" alt="Surf 1"></div>
-            </a>
-            <div class="translate">
-                <a href="english.html"> <img class="translation" src="en.png" alt="translate-english"></a>
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img id="logo" src="./logos/logoblue.PNG" alt="Chicama Surf Trip">
+                </a>
             </div>
             <div class="navbar-toggle" id="navbar-toggle">&#9776;</div>
             <ul class="navbar-links" id="navbar-links">
                 <li class="navbar-close" id="navbar-close">&times;</li>
-                <a href="#hijos">
-                    <li class="menu">Hijos del Mar</li>
-                </a>
-                <a href="#bulletpoints">
-                    <li class="menu">Experiencia Chicama</li>
-                </a>
-                <a href="#reloj">
-                    <li class="menu">Cuenta Regresiva para el próximo Trip</li>
-                </a>
-                <!-- <a href="lima.html">
-                    <li class="menu">Lima Surf Day</li>
-                </a> -->
-                <a href="#faqs">
-                    <li class="menu">Preguntas Frecuentes</li>
-                </a>
-                <a href="#contact">
-                    <li class="menu">Conectemos</li>
-                </a>
-
+                <li><a href="#about">Hijos del Mar</a></li>
+                <li><a href="#features">Experiencia Chicama</a></li>
+                <li><a href="#team">Nuestros Guías</a></li>
+                <li><a href="#benefits">¿Por qué elegir Chicama?</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-    <section id="home" class="section">
+    <section id="hero" class="section">
         <video class="background-video" autoplay playsinline loop muted>
             <source src="./chicama.mp4" type="video/mp4">
         </video>
         <div class="content">
             <h1>Hijos del Mar</h1>
-            <h3>Surftrip a Perú</h3>
-            <img id="peru" src="./Flag-Peru.gif" alt="peru">
-
-            <p>Viví una experiencia inolvidable.</p>
-
-
-            <div class="sliding-rectangle sliding-rectangle.visible">
-                <br>
-                <p>Chicama Surf House Trip - 16/02/2026 al 21/02/2026</p>
-                <!-- <p>Chicama Boutique Hotel Trip - 28/03/2025 al 01/04/2025</p> -->
-                <br>
-                <p></p>
-                                <!-- <a href="hdm_surftrip_chicama.pdf" download="brochure_hdm_chicama.pdf"> -->
-                    <button class="" id="reservaButton">Reservá tu lugar ahora!</button>
-                </a>
-                <!-- <a href="hdm_surftrip_chicama.pdf" download="brochure_hdm_chicama.pdf">
-                    <button class="" id="reservaButton">Reservá tu lugar ahora!</button>
-                </a>  -->
+            <h3>Surf Trip en Chicama, Perú</h3>
+            <p>Donde la ola más larga del mundo se encuentra con tu aventura personal</p>
+            <div class="date-banner">
+                <div class="date-content">
+                    <span class="date-text">Booking disponible</span>
+                    <span class="date-text"><strong>Chicama Surf House Trip</strong></span>
+                    <span class="date-text">16/02/2026 - 21/02/2026</span>
+                </div>
             </div>
-
-
+            <div class="cta-buttons">
+                <button class="btn-primary" id="bookButton">Reserva tu Viaje</button>
+            </div>
+        </div>
     </section>
 
-    <section id="hijos" class="section about">
-        <h2 class="subtitulos">¿Quienes somos Hijos del Mar?</h2>
-
-        <div class="iframe-box">
-            <iframe src="https://www.youtube.com/embed/U7iRluaj9Jg?si=Rjgf99WlYn2pqQGd" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section id="about" class="section about">
+        <h2 class="fade-in">Hijos del Mar</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="lead fade-in fade-in-delay-1">En el vasto e infinito abrazo del océano, encontramos nuestro hogar y nuestra identidad.</p>
+                    <br>
+                    <p class="fade-in fade-in-delay-2">Somos "Hijos del Mar", un grupo de amigos tejido por las olas, el viento y la sal. Somos aquellos que sienten la llamada del mar en cada susurro de las olas, en cada reflejo del sol sobre el agua.</p>
+                    <br>
+                    <p class="fade-in fade-in-delay-2">Ser "Hijo del Mar" no es un título reservado solo para quienes han fundado este viaje, sino para todos aquellos que aman el mar con una pasión inquebrantable. Es para aquellos que encuentran paz en su inmensidad, aventura en sus misterios, y una conexión profunda en su eterna danza.</p>
+                    <br>
+                    <p class="fade-in fade-in-delay-2">Los que hemos iniciado este camino, somos simplemente los guías en una travesía que es mucho más grande que nosotros mismos y te invitamos a compartirla junto a nosotros. ¿Estás listo? ¡Vamos!</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="video-container fade-in fade-in-delay-3">
+                        <iframe 
+                            width="100%" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/U7iRluaj9Jg?si=89QG5DUtvAD2JFHJ" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <p class="presentacion" id="typed-text">
+    <section id="features" class="section features">
+        <h2 class="fade-in">Experiencia Chicama</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="fade-in fade-in-delay-1">La ola más larga del mundo</h3>
+                    <p class="fade-in fade-in-delay-2">Puerto Chicama, ubicado en la costa norte de Perú, es un lugar que resuena en los corazones de surfistas de todo el mundo. Este pequeño pueblo costero es famoso por tener la ola más larga del mundo, una maravilla natural que puede ofrecer recorridos de más de dos kilómetros.</p>
+                    <p class="fade-in fade-in-delay-2">Con una rica historia ligada al mar, Chicama es un destino que no solo ofrece adrenalina, sino también una conexión profunda con la naturaleza y la cultura local. Este es el lugar donde los sueños de surf se hacen realidad, en un entorno de belleza y serenidad incomparables.</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="map-container fade-in fade-in-delay-3">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1234567890123!2d-79.12345678901234!3d-7.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDcnMjQuMCJTIDc5wrAwNycyNC4wIlc!5e0!3m2!1ses!2spe!4v1234567890123!5m2!1ses!2spe" 
+                            width="100%" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4 fade-in">¿Qué incluye esta experiencia?</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-1">
+                        <i class="fa-solid fa-house"></i>
+                        <h3>Alojamiento & Comidas</h3>
+                        <p>Habitación compartida con desayuno y cena incluidos</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-2">
+                        <i class="fa-solid fa-van-shuttle"></i>
+                        <h3>Traslados</h3>
+                        <p>In/out desde aeropuerto de Trujillo (TRU) hacia Puerto Malabrigo / Puerto Chicama</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-3">
+                        <i class="fa-solid fa-ship"></i>
+                        <h3>Salidas Embarcadas</h3>
+                        <p>Salidas en zodiac al punto de surf</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-1">
+                        <i class="fa-solid fa-water"></i>
+                        <h3>Equipamiento</h3>
+                        <p>Tabla de surf (funboard o longboard) y wetsuit neoprene durante toda la estadía</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-2">
+                        <i class="fa-solid fa-spa"></i>
+                        <h3>Yoga & Coaching</h3>
+                        <p>Clase de yoga, coaching con PNL y videoanálisis de las sesiones</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-3">
+                        <i class="fa-solid fa-camera"></i>
+                        <h3>Recuerdos</h3>
+                        <p>Pack de fotos, videos y algunas sorpresas durante el trip</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            En el vasto e infinito abrazo del océano, encontramos nuestro hogar y nuestra identidad.
-            <br>
-            <br>
-            Somos "Hijos del Mar", un grupo de amigos tejido por las olas, el viento y la sal. Somos aquellos que
-            sienten la llamada del mar en cada susurro de las olas, en cada reflejo del sol sobre el agua.
-            <br>
-            <br>
-            Ser "Hijo del Mar" no es un título reservado solo para quienes han fundado este viaje, sino para todos
-            aquellos que aman el mar con una pasión inquebrantable. Es para aquellos que encuentran paz en su
-            inmensidad,
-            aventura en sus misterios, y una conexión profunda en su eterna danza.
-            <br>
-            <br>
-            Los que hemos iniciado este camino, somos simplemente los guías en una travesía que es mucho más grande que
-            nosotros mismos y te invitamos a compartirla junto a nosotros. ¿Estás listo? ¡Vamos!
+    <section id="team" class="section team">
+        <h3 class="equipo subtitulos">Nuestros guías</h3>
+        <div class="row g-4 contenedor-cards">
+            <div class="col-12 col-md-3">
+                <div class="card h-100 animated-card" onclick="toggleDescription(this)">
+                    <img src="./ale.jpg" class="card-img-top" alt="Alejandro">
+                    <div class="card-body">
+                        <h5 class="card-title">Ale Serravalle</h5>
+                        <p class="card-text fuente-description">Representa la <strong>fuerza</strong> y
+                            <strong>espíritu</strong> del equipo. Su energía e intuición nos
+                            llevan a los mejores lugares y momentos. Pertenece a la camada old school de surfistas argentinos. Personalidad destacada de la ciudad de Mar del Plata por su
+                            obra y trayectoria en el ámbito de las artes. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card h-100 animated-card" onclick="toggleDescription(this)">
+                    <img src="./ceci.jpg" class="card-img-top" alt="Cecilia">
+                    <div class="card-body">
+                        <h5 class="card-title">Ce Lugani</h5>
+                        <p class="card-text fuente-description">Como profesora de yoga egresada del Centro Internacional de Yoga Kali Shakti y nivel 1 en Reiki es <strong>sostén
+                                energético</strong> en nuestras experiencias presenciales fusionando reiki, yoga y arte, para sanar y despertar la belleza interior en cada ser. Además es quien le da curso,
+                            organización y sostén administrativo a todas
+                            nuestras iniciativas. Es una inspiración constante para el equipo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card h-100 animated-card" onclick="toggleDescription(this)">
+                    <img src="./lucas.jpg" class="card-img-top" alt="Lucas">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucas Muñoz</h5>
+                        <p class="card-text fuente-description">Es el fiel representante del lema del equipo <strong>"No hay límites".</strong> Su energía creativa es vital para la innovación, el desarrollo de nuevas ideas y nos facilita la posiblidad de alcanzar siempre nuevos horizontes. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3">
+                <div class="card h-100 animated-card" onclick="toggleDescription(this)">
+                    <img src="./marian.jpg" class="card-img-top" alt="Mariano">
+                    <div class="card-body">
+                        <h5 class="card-title">Marian Urra</h5>
+                        <p class="card-text fuente-description">Fundador de Hijos del Mar Surf Trip. Surf Coach por la
+                            International Surfing Association (ISA) y Coach con PNL. Su aporte técnico profesional como abogado nos brinda guía en todo lo referido a la
+                            <strong>claridad</strong>, el <strong>orden</strong> y la
+                            <strong>comunicación</strong>. Su visión y organización son esenciales para que las cosas sucedan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="section">
+        <h2 class="fade-in">¿Por qué elegir Chicama?</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="benefits-list fade-in fade-in-delay-1">
+                        <li>Mejora tu técnica de surf en condiciones ideales</li>
+                        <li>Conecta con la naturaleza y el océano</li>
+                        <li>Descubre la cultura local peruana</li>
+                        <li>Reduce el estrés y recarga energías</li>
+                        <li>Crea recuerdos inolvidables</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-carousel fade-in fade-in-delay-3">
+                        <div class="carousel-container">
+                            <img src="chicamas.JPG" alt="Chicama Experience" class="carousel-image active">
+                            <img src="chicamas2.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="chicamas4.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="surf1.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="surf2.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="surf3.JPG" alt="Chicama Experience" class="carousel-image">
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-prev">❮</button>
+                            <button class="carousel-next">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <h2 class="fade-in">Nuestros viajeros</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card fade-in fade-in-delay-1">
+                        <div class="testimonial-content">
+                            <p>"Una experiencia única que superó todas mis expectativas. Las olas, la gente y la energía del lugar son increíbles."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="/brune.PNG" alt="Brunella" class="rounded-circle">
+                            </div>
+                            <div class="author-info">
+                                <h4>Brunella</h4>
+                                <p>Surfista</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card fade-in fade-in-delay-2">
+                        <div class="testimonial-content">
+                            <p>"Chicama es un lugar mágico. La ola más larga del mundo te da tiempo para pensar y mejorar tu técnica. Una experiencia que recomiendo a todos."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="/mauro.JPG" alt="Mauro" class="rounded-circle">
+                            </div>
+                            <div class="author-info">
+                                <h4>Mauro</h4>
+                                <p>Viajero</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card fade-in fade-in-delay-3">
+                        <div class="testimonial-content">
+                            <p>"La combinación perfecta de surf, naturaleza y buena vibra. Un viaje que te cambia la perspectiva del surf y la vida."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="/igna.PNG" alt="Ignacio" class="rounded-circle">
+                            </div>
+                            <div class="author-info">
+                                <h4>Ignacio</h4>
+                                <p>Surfista</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <h2 class="fade-in">Preguntas Frecuentes</h2>
+        <div class="container">
+            <div class="accordion" id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                ¿Necesito experiencia previa en surf para unirme al surftrip?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            No es necesario tener experiencia previa. Ofrecemos acompañamiento para todos los niveles, desde
+                            principiantes hasta avanzados. Nuestros guías e instructores te ayudarán a mejorar
+                            tus habilidades en el agua y disfrutar al máximo desde el primer día.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                ¿Qué equipo de surf debo llevar?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            No necesitas traer tu propio equipo a menos que lo prefieras. Nuestro staff local proporciona
+                            una variedad de tablas y wetsuits de neopreno para que puedas disfrutar de las olas del pacífico. Si
+                            recomendamos traer botas y guantes de neopreno para mayor comodidad y protección ya que las playas
+                            son rocosas.
+                            Sin embargo, si tienes un equipo personal al que estés acostumbrado, eres bienvenido a traerlo.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                ¿Hay actividades adicionales además del surf?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body">
+                            Sí, además de surfear, tenemos previsto varias actividades, entre las cuales tendremos clase y
+                            ejercicios de yoga, coaching con PNL, sesiones de videoanálisis, momentos de musica en vivo
+                            compartidos, entre otras.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                ¿Es seguro surfear en Chicama?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body">
+                            Sí, es seguro. Junto con los guias locales estaremos cerca para garantizar tu
+                            seguridad y proporcionar asistencia cuando sea necesario.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                ¿Qué debo empacar para el surftrip?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                        <div class="card-body">
+                            Te recomendamos traer ropa cómoda para la playa, protector solar, gorra o sombrero, traje de
+                            baño, sandalias, y algun abrigo ligero para las noches más frescas. También es útil llevar un
+                            adaptador de enchufe para tus dispositivos electrónicos. No olvides traer tus botas y guantes de neopreno.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                ¿Cómo reservo mi lugar en el surftrip?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                        <div class="card-body">
+                            Para reservar tu lugar, puedes contactar con nosotros por email
+                            hijosdelmarsurftrip@gmail.com, un DM a nuestro instagram @hijosdelmarsurf o por WhatsApp al +542236333620. Le proporcionaremos toda la información necesaria y los pasos para confirmar su reserva. También puedes acercarte personalmente a la agencia Pier Travel en la ciudad de Mar del Plata.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingEight">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                ¿Puedo combinar esta experiencia con otros destinos de Perú?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                        <div class="card-body">
+                            Por supuesto. Nuestros amigos de Pier Travel, cuentan con la experiencia y conocimiento para
+                            asesorarte sobre todas las opciones disponibles en Perú para hacer de tu viaje una experiecia
+                            totalmente personalizada.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2 class="fade-in">Contacto</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-info fade-in fade-in-delay-1">
+                        <h3>¿Listo para la aventura?</h3>
+                        <p>Contactanos para más información sobre nuestros viajes y experiencias.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <p>hijosdelmarsurftrip@gmail.com</p>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <p>+54 223 633 3620</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-form fade-in fade-in-delay-2">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder="Mensaje"></textarea>
+                            </div>
+                            <button type="submit" id="submitButton" class="btn-primary">Enviar Mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation Popup -->
+    <div id="confirmationPopup" class="popup">
+        <div class="popup-content">
+            <div class="popup-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for contacting us. We'll get back to you shortly.</p>
+            <button class="close-popup-btn">Close</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/hijosdelmarsurf" target="https://www.instagram.com/hijosdelmarsurf/"><i class="fab fa-instagram"></i></a>
+            
+                    <a href="https://wa.me/542236333620" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-logo">
+                    <a href="#hero">
+                        <img src="./logos/logowhite.PNG" alt="Hijos del Mar Logo">
+                    </a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Hijos del Mar. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
-</p>
-
-<h3 class="equipo subtitulos">Nuestros guías</h3>
-
-<div class="row g-4 contenedor-cards">
-    <div class="col-12 col-md-3">
-        <div class="card h-100 animated-card" onclick="toggleDescription(this)">
-            <img src="./ale.jpg" class="card-img-top" alt="Alejandro">
-            <div class="card-body">
-                <h5 class="card-title">Ale Serravalle</h5>
-                <p class="card-text fuente-description">Representa la <strong>fuerza</strong> y
-                    <strong>espíritu</strong> del equipo. Su energía e intuición nos
-                    llevan a los mejores lugares y momentos. Pertenece a la camada old school de surfistas argentinos. Personalidad destacada de la ciudad de Mar del Plata por su
-                    obra y trayectoria en el ámbito de las artes. 
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-md-3">
-        <div class="card h-100 animated-card" onclick="toggleDescription(this)">
-            <img src="./ceci.jpg" class="card-img-top" alt="Cecilia">
-            <div class="card-body">
-                <h5 class="card-title">Ce Lugani</h5>
-                <p class="card-text fuente-description">Como profesora de yoga egresada del Centro Internacional de Yoga Kali Shakti y nivel 1 en Reiki es <strong>sostén
-                        energético</strong> en nuestras experiencias presenciales fusionando reiki, yoga y arte, para sanar y despertar la belleza interior en cada ser. Además es quien le da curso,
-                    organización y sostén administrativo a todas
-                    nuestras iniciativas. Es una inspiración constante para el equipo.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-md-3">
-        <div class="card h-100 animated-card" onclick="toggleDescription(this)">
-            <img src="./lucas.jpg" class="card-img-top" alt="Lucas">
-            <div class="card-body">
-                <h5 class="card-title">Lucas Muñoz</h5>
-                <p class="card-text fuente-description">Es el fiel representante del lema del equipo <strong>"No hay límites".</strong> Su energía creativa es vital para la innovación, el desarrollo de nuevas ideas y nos facilita la posiblidad de alcanzar siempre nuevos horizontes. 
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 col-md-3">
-        <div class="card h-100 animated-card" onclick="toggleDescription(this)">
-            <img src="./marian.jpg" class="card-img-top" alt="Mariano">
-            <div class="card-body">
-                <h5 class="card-title">Marian Urra</h5>
-                <p class="card-text fuente-description">Fundador de Hijos del Mar Surf Trip. Surf Coach por la
-                    International Surfing Association (ISA) y Coach con PNL. Su aporte técnico profesional como abogado nos brinda guía en todo lo referido a la
-                    <strong>claridad</strong>, el <strong>orden</strong> y la
-                    <strong>comunicación</strong>. Su visión y organización son esenciales para que las cosas sucedan.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-</section>
-
-<section id="bulletpoints" class="gallery">
-
-    <h2 class="bullets subtitulos">La ola mas larga del mundo</h2>
-
-    <h3 class="top">¿A dónde vamos?</h3>
-
-    <p class="presentacion2">Puerto Chicama, ubicado en la costa norte de Perú, es un lugar que resuena en los corazones
-        de surfistas de todo el mundo. Este pequeño pueblo costero es famoso por tener la ola más larga del mundo, una
-        maravilla natural que puede ofrecer recorridos de más de dos kilómetros. Con una rica historia ligada al mar,
-        Chicama es un destino que no solo ofrece adrenalina, sino también una conexión profunda con la naturaleza y la
-        cultura local. Este es el lugar donde los sueños de surf se hacen realidad, en un entorno de belleza y serenidad
-        incomparables.</p>
-
-    <div class="carousel-container">
-        <div class="carousel">
-            <img src="surf1.JPG" class="sh" alt="Image 1">
-            <img src="chicama.jpg" class="sh" alt="Image 5">
-            <img src="surf2.JPG" class="sh" alt="Image 2">
-            <img src="chicamaaa.jpg" class="sh" alt="Image 4">
-            <img src="surf3.JPG" class="sh" alt="Image 3">
-            <!-- <img src="ale.jpg" class="sh" alt="Image 6"> -->
-            <img src="chicamas.JPG" class="sh" alt="Image 7">
-            <img src="chicamas2.JPG" class="sh" alt="Image 8">
-            <img src="chicamas4.JPG" class="sh" alt="Image 9">
-            <!-- <img src="marian.jpg" class="sh" alt="Image 10"> -->
-        </div>
-    </div>
-
-
-
-    <h3 class="top"> ¿Qué incluye este surftrip?</h3>
-
-    <img class="servicios" src="./prueba.PNG" alt="servicios">
-
-    <ul class="bullets">
-        <li>Alojamiento en habitación compartida con desayuno y cena incluidos</li>
-        <li>Traslados in/out desde aeropuerto de Trujillo (TRU) hacia Puerto Malabrigo / Puerto Chicama</li>
-        <li>Salidas embarcadas en zodiac (una salida por día) al punto de surf. </li>
-        <li>Equipamiento incluido: tabla de surf (tipo funboard o longboard), wetsuit neoprene, durante toda la estadía
-        </li>
-        <li>Clase de yoga</li>
-        <li>Coaching con PNL</li>
-        <li>Videoanálisis de las sesiones</li>
-        <li>Pack de fotos y videos</li>
-        <li>También guardamos algunas sopresas</li>
-        <li>Coordinación de nuestros guias durante todo el trip</li>
-    </ul>
-
-
-
-
-
-
-</section>
-
-<section id="faqs" class="section about">
-    <h2 class="subtitulos">Preguntas Frecuentes</h2>
-    <div id="accordion">
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="false" aria-controls="collapseOne">
-                        ¿Necesito experiencia previa en surf para unirme al surftrip?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    No es necesario tener experiencia previa. Ofrecemos acompañamiento para todos los niveles, desde
-                    principiantes hasta avanzados. Nuestros guías e instructores te ayudarán a mejorar
-                    tus habilidades en el agua y disfrutar al máximo desde el primer día.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        ¿Qué equipo de surf debo llevar?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    No necesitas traer tu propio equipo a menos que lo prefieras. Nuestro staff local proporciona
-                    una variedad de tablas y wetsuits de neoprene para que puedas disfrutar de las olas del pacífico. Si
-                    recomendamos traer botas y guantes de neoprene para mayor comodidad y protección ya que las playas
-                    son rocosas.
-                    Sin embargo, si tienes un equipo personal al que estés acostumbrado, eres bienvenido a traerlo.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFour">
-                <h5 class="mb-0">
-                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFour"
-                        aria-expanded="false" aria-controls="collapseFour">
-                        ¿Hay actividades adicionales además del surf?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                <div class="card-body">
-                    Sí, además de surfear, tenemos previsto varias actividades, entre las cuales tendremos clase y
-                    ejercicios de yoga, coaching con PNL, sesiones de videoanálisis, momentos de musica en vivo
-                    compartidos, entre otras.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingFive">
-                <h5 class="mb-0">
-                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseFive"
-                        aria-expanded="false" aria-controls="collapseFive">
-                        ¿Es seguro surfear en Chicama?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                <div class="card-body">
-                    Sí, es seguro. Junto con los guias locales estaremos cerca para garantizar tu
-                    seguridad
-                    y proporcionar asistencia cuando sea necesario.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingSix">
-                <h5 class="mb-0">
-                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseSix"
-                        aria-expanded="false" aria-controls="collapseSix">
-                        ¿Qué debo empacar para el surftrip?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                <div class="card-body">
-                    Te recomendamos traer ropa cómoda para la playa, protector solar, gorra o sombrero, traje de
-                    baño, sandalias, y algun abrigo ligero para las noches más frescas. También es útil llevar un
-                    adaptador de enchufe para tus dispositivos electrónicos. No olvides traer tus botas y guantes de neoprene.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingSeven">
-                <h5 class="mb-0">
-                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseSeven"
-                        aria-expanded="false" aria-controls="collapseSeven">
-                        ¿Cómo reservo mi lugar en el surftrip?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                <div class="card-body">
-                    Para reservar tu lugar, puedes contactar con nosotros por email
-                    hijosdelmarsurftrip@gmail.com, un DM a nuestro instagram @hijosdelmarsurf o por WhatsApp al +542236333620. Le proporcionaremos toda la información necesaria y los pasos para confirmar su reserva. También puedes acercarte personalmente a la agencia Pier Travel en la ciudad de Mar del Plata.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingEight">
-                <h5 class="mb-0">
-                    <button class="btn collapsed" data-toggle="collapse" data-target="#collapseEight"
-                        aria-expanded="false" aria-controls="collapseEight">
-                        ¿Puedo combinar esta experiencia con otros destinos de Perú?
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-                <div class="card-body">
-                    Por supuesto. Nuestros amigos de Pier Travel, cuentan con la experiencia y conocimiento para
-                    asesorarte sobre todas las opciones disponibles en Perú para hacer de tu viaje una experiecia
-                    totalmente personalizada.
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-</section>
-
-
-
-<section id="reloj" class="section reloj">
-
-    <div id="countdown-container">
-        <h2>Nos vemos pronto!</h2>
-        <h3>El viaje comienza en...</h3>
-        <div id="countdown">
-            <div><span id="days"></span>Días</div>
-            <div><span id="hours"></span>Horas</div>
-            <div><span id="minutes"></span>Minutos</div>
-            <div><span id="seconds"></span>Segundos</div>
-        </div>
-    </div>
-
-    <a href="hdm_surftrip_chicama.pdf" download="brochure_hdm_chicama.pdf">
-        <button class="" id="reservaButton">Reservá tu lugar ahora!</button>
-    </a>
-
-    <script>
-        document.getElementById("reservaButton").onclick = function () {
-            window.location.href = "mailto:hijosdelmarsurftrip@gmail.com?subject=Inscripción Surf Trip a Perú&body=Hola, quiero inscribirme en el surf trip a Perú.";
-        };
-    </script>
-
-
-
-</section>
-
-<section id="contact" class="section about">
-    <h2>Conectemos</h2>
-    <p class="contactito">¿Te quedaron dudas? Contactanos, estamos para asesorarte.</p>
-
-    <a href="mailto:hijosdelmarsurftrip@gmail.com">hijosdelmarsurftrip@gmail.com</a>
-
-
-    <div class="iconosRedes touch">
-
-        <a class="iconos" href="https://www.instagram.com/hijosdelmarsurf/" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a class="iconos" href="https://www.whatsapp.com" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a class="iconos" href="mailto:hijosdelmarsurftrip@gmail.com">
-            <i class="fa-regular fa-envelope"></i>
-        </a>
-
-        <p class="touch">También podes informarte sobre este trip y tu viaje a traves de nuestra agencia de viajes
-            asociada:</p>
-
-        <a href="https://www.instagram.com/piertravel"><img class="logofooter contactopier" src="./logos/pier.PNG"
-                alt="agencia"></a>
-
-        <!-- <div class="elfsight-app-d0d092bb-dc10-40a1-97ba-1a020b5c9550" data-elfsight-app-lazy></div> -->
-</section>
-
-
-<footer class="footer">
-
-
-    <a href="index.html"><img class="logofooter" src="./logos/logoblack.PNG" alt="Surf 1"></a>
-    <a href="https://www.instagram.com/piertravel"><img class="logofooter" src="./logos/pier.PNG" alt="agencia"></a>
-
-
-    <p class="copyright">&copy; 2025 Hijos del Mar Surftrip</p>
-
-    <div class="redes">
-        <!-- <h4>Seguinos</h4> -->
-        <div class="iconosRedes">
-
-            <a class="iconos " href="https://www.instagram.com/hijosdelmarsurf/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a class="iconos " href="https://www.whatsapp.com" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-            </a>
-            <a class="iconos " href="mailto:hijosdelmarsurftrip@gmail.com">
-                <i class="fa-regular fa-envelope"></i>
-            </a>
-        </div>
-
-    </div>
-</footer>
-
-<script>
-    const navbarToggle = document.getElementById('navbar-toggle');
-    const navbarLinks = document.getElementById('navbar-links');
-    const navbarClose = document.getElementById('navbar-close');
-
-    navbarToggle.addEventListener('click', () => {
-        navbarLinks.classList.toggle('active');
-    });
-
-    navbarClose.addEventListener('click', () => {
-        navbarLinks.classList.remove('active');
-    });
-
-</script>`
-
-<script type="text/javascript" src="./script.js"></script>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/4ccc3e84f9.js" crossorigin="anonymous"></script>
-<script src="script.js"></script>
-</body>
+</html>
