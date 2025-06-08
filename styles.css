@@ -465,6 +465,31 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
 }
 
+/* Social media icons in footer */
+.footer .iconosRedes i {
+    color: white;
+    margin-left: 1.3rem;
+    margin-top: 1rem;
+    transform: scale(1.4);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects for footer social icons */
+.footer .iconosRedes i.fa-instagram:hover {
+    color: #e4405f;
+    transform: scale(2);
+}
+
+.footer .iconosRedes i.fa-whatsapp:hover {
+    color: #25d366;
+    transform: scale(2);
+}
+
+.footer .iconosRedes i.fa-envelope:hover {
+    color: #0072c6;
+    transform: scale(2);
+}
+
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
