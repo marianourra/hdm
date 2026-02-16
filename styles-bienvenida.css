@@ -1,0 +1,434 @@
+/* ===== Bienvenida: estilos modernos y dinámicos ===== */
+
+/* Variables locales */
+.bienvenida-section {
+    --bienvenida-primary: #0c4a6e;
+    --bienvenida-secondary: #0e7490;
+    --bienvenida-accent: #06b6d4;
+    --bienvenida-bg: #f0f9ff;
+    --bienvenida-card-bg: #ffffff;
+    --bienvenida-text: #1e293b;
+    --bienvenida-muted: #64748b;
+}
+
+/* Hero sin video */
+.bienvenida-hero {
+    position: relative;
+    min-height: 42vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8rem 1.5rem 4rem;
+    background: linear-gradient(135deg, #0c4a6e 0%, #0e7490 40%, #0891b2 70%, #06b6d4 100%);
+    overflow: hidden;
+}
+
+.bienvenida-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.6;
+}
+
+.bienvenida-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+}
+
+.bienvenida-hero-title {
+    font-family: 'DM Serif Text', serif;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    color: #fff;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    letter-spacing: 0.02em;
+}
+
+.bienvenida-hero-subtitle {
+    font-size: clamp(1.05rem, 2.2vw, 1.25rem);
+    color: rgba(255,255,255,0.95);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.bienvenida-hero-tagline {
+    font-size: clamp(0.9rem, 1.8vw, 1rem);
+    color: rgba(255,255,255,0.85);
+    font-weight: 300;
+}
+
+.bienvenida-hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 60' preserveAspectRatio='none'%3E%3Cpath fill='%23f0f9ff' d='M0 60h1440V40c-120-15-240-15-360 0S960 55 720 40 480 25 240 40 120 55 0 40v20z'/%3E%3C/svg%3E") no-repeat bottom center;
+    background-size: 100% 100%;
+}
+
+/* Contenedor general */
+.container-bienvenida {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+}
+
+.bienvenida-quote {
+    font-family: 'DM Serif Text', serif;
+    font-size: clamp(1.1rem, 2vw, 1.35rem);
+    color: var(--bienvenida-primary, #0c4a6e);
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 0 1rem;
+    line-height: 1.6;
+}
+
+.bienvenida-quote-end {
+    margin-top: 3rem;
+}
+
+/* Grid de información */
+.bienvenida-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+@media (min-width: 768px) {
+    .bienvenida-info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .bienvenida-info-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.bienvenida-card {
+    background: var(--bienvenida-card-bg);
+    border-radius: 16px;
+    padding: 1.75rem;
+    box-shadow: 0 4px 20px rgba(12, 74, 110, 0.08);
+    border: 1px solid rgba(14, 116, 144, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.bienvenida-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(12, 74, 110, 0.14);
+}
+
+.bienvenida-card-highlight {
+    background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%);
+    border-color: rgba(6, 182, 212, 0.25);
+}
+
+.bienvenida-card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.bienvenida-card h3 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.25rem;
+    color: var(--bienvenida-primary, #0c4a6e);
+    margin-bottom: 0.75rem;
+}
+
+.bienvenida-card p,
+.bienvenida-card li {
+    font-size: 0.95rem;
+    color: var(--bienvenida-text, #1e293b);
+    line-height: 1.6;
+}
+
+.bienvenida-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bienvenida-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+}
+
+/* Mapas e imágenes */
+.bienvenida-map-wrap {
+    margin: 2.5rem 0;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(12, 74, 110, 0.12);
+}
+
+.bienvenida-map-wrap .chicama {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hint para acordeones */
+.bienvenida-accordion-hint {
+    text-align: center;
+    color: var(--bienvenida-muted, #64748b);
+    font-size: 0.9rem;
+    margin: -0.5rem 0 1rem;
+}
+
+/* Acordeones bienvenida */
+.accordion-bienvenida {
+    --bs-accordion-border-color: rgba(14, 116, 144, 0.2);
+    --bs-accordion-btn-bg: var(--bienvenida-card-bg);
+    --bs-accordion-active-bg: rgba(6, 182, 212, 0.08);
+    --bs-accordion-btn-color: var(--bienvenida-primary);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem rgba(6, 182, 212, 0.25);
+}
+
+.accordion-bienvenida .accordion-item {
+    background: var(--bienvenida-card-bg);
+    border: 1px solid rgba(14, 116, 144, 0.15);
+    border-radius: 12px !important;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.accordion-bienvenida .accordion-item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-bienvenida .accordion-button {
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1rem 1.25rem;
+    color: var(--bienvenida-primary) !important;
+    background: var(--bienvenida-card-bg) !important;
+    border: none;
+    box-shadow: none !important;
+}
+
+.accordion-bienvenida .accordion-button:not(.collapsed) {
+    background: rgba(6, 182, 212, 0.08) !important;
+    color: var(--bienvenida-secondary) !important;
+}
+
+.accordion-bienvenida .accordion-button::after {
+    filter: none;
+    opacity: 0.8;
+}
+
+.accordion-bienvenida .accordion-body {
+    padding: 1rem 1.25rem 1.25rem;
+    font-size: 0.95rem;
+    color: var(--bienvenida-text);
+    line-height: 1.6;
+}
+
+.accordion-bienvenida .accordion-body p {
+    margin: 0 0 0.75rem;
+}
+
+.accordion-bienvenida .accordion-body p:last-child,
+.accordion-bienvenida .accordion-body ul:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-icon {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Bloque información general (acordeón) */
+.bienvenida-info-accordion {
+    margin: 2.5rem 0;
+}
+
+/* Secciones de la ola (acordeón) */
+.bienvenida-secciones {
+    margin: 3rem 0;
+}
+
+.bienvenida-section-title {
+    font-family: 'DM Serif Text', serif;
+    font-size: clamp(1.5rem, 3vw, 1.85rem);
+    color: var(--bienvenida-primary, #0c4a6e);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Puerto Malabrigo */
+.malabrigo-wrap {
+    margin: 3rem 0;
+    padding: 2rem 0;
+    border-top: 1px solid rgba(14, 116, 144, 0.15);
+}
+
+/* Pronóstico de olas */
+.pronostico-wrap {
+    margin-top: 4rem;
+    padding-top: 2.5rem;
+    border-top: 2px solid rgba(14, 116, 144, 0.2);
+}
+
+.pronostico-intro {
+    text-align: center;
+    color: var(--bienvenida-muted, #64748b);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.pronostico-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+@media (min-width: 768px) {
+    .pronostico-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 992px) {
+    .pronostico-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .pronostico-card-featured {
+        grid-column: span 1;
+    }
+}
+
+.pronostico-card {
+    background: var(--bienvenida-card-bg);
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 18px rgba(12, 74, 110, 0.08);
+    border: 1px solid rgba(14, 116, 144, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pronostico-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 28px rgba(12, 74, 110, 0.12);
+}
+
+.pronostico-card-featured {
+    background: linear-gradient(145deg, #ecfeff 0%, #cffafe 100%);
+    border-color: rgba(6, 182, 212, 0.3);
+}
+
+.pronostico-fecha {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--bienvenida-secondary, #0e7490);
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.03em;
+}
+
+.pronostico-card h4 {
+    font-size: 1.05rem;
+    color: var(--bienvenida-primary, #0c4a6e);
+    margin-bottom: 0.6rem;
+    line-height: 1.35;
+}
+
+.pronostico-card p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--bienvenida-text, #1e293b);
+    line-height: 1.6;
+}
+
+/* Pronóstico expandible (click para desplegar) */
+.pronostico-card-expandible {
+    padding: 0;
+    overflow: hidden;
+}
+
+.pronostico-card-toggle {
+    width: 100%;
+    text-align: left;
+    padding: 1.25rem 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0.25rem;
+    position: relative;
+    padding-right: 2.75rem;
+    transition: background 0.2s ease;
+}
+
+.pronostico-card-toggle:hover {
+    background: rgba(6, 182, 212, 0.06);
+}
+
+.pronostico-card-expandible .pronostico-fecha {
+    margin-bottom: 0.25rem;
+}
+
+.pronostico-card-expandible .pronostico-card-toggle h4 {
+    flex: 1 1 100%;
+    margin: 0;
+}
+
+.pronostico-toggle-icon {
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.6rem;
+    height: 0.6rem;
+    border-right: 2px solid var(--bienvenida-secondary);
+    border-bottom: 2px solid var(--bienvenida-secondary);
+    transform: translateY(-60%) rotate(45deg);
+    transition: transform 0.25s ease;
+}
+
+.pronostico-card-toggle[aria-expanded="true"] .pronostico-toggle-icon {
+    transform: translateY(-40%) rotate(-135deg);
+}
+
+.pronostico-card-expandible > .collapse {
+    padding: 0 1.5rem 1.25rem;
+}
+
+.pronostico-card-expandible .collapse p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding-top: 0.25rem;
+    border-top: 1px solid rgba(14, 116, 144, 0.12);
+    margin-top: 0;
+}
+
+/* Fade-in para scroll reveal */
+.bienvenida-section .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.bienvenida-section .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bienvenida-section .pronostico-grid .fade-in { transition-delay: 0.05s; }
+.bienvenida-section .pronostico-grid .fade-in:nth-child(2) { transition-delay: 0.1s; }
+.bienvenida-section .pronostico-grid .fade-in:nth-child(3) { transition-delay: 0.15s; }
+.bienvenida-section .pronostico-grid .fade-in:nth-child(4) { transition-delay: 0.2s; }
+.bienvenida-section .pronostico-grid .fade-in:nth-child(5) { transition-delay: 0.25s; }
+
+/* Ajuste sección principal */
+.section.bienvenida-section {
+    background: var(--bienvenida-bg, #f0f9ff);
+    padding-top: 2rem;
+}

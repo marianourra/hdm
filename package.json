@@ -1,0 +1,12 @@
+{
+  "name": "hdm",
+  "version": "1.0.0",
+  "description": "Hijos del Mar - Surftrip a Perú",
+  "private": true,
+  "scripts": {
+    "dev": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
