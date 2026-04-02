@@ -695,21 +695,56 @@ p {
     margin-right: 1.5rem;
 }
 
+/* Móvil: filas a ancho completo; desktop se anula abajo */
 .menu {
     width: 100%;
 }
 
-/* Estilo al pasar el mouse sobre cada elemento <li> */
-.navbar-links li:hover {
-    background-color: #a3a3a394;
-    /* Cambia el color de fondo al pasar el mouse */
-    border-radius: 5px;
-    /* Añade bordes redondeados */
-}
+@media (min-width: 769px) {
+    .navbar {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
 
-/* Cambia el color del texto al pasar el mouse */
-.navbar-links li:hover a {
-    color: #60b8f3;
+    .navbar > a:first-of-type {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .navbar-links {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        width: auto;
+    }
+
+    .navbar-links li.menu {
+        width: auto;
+    }
+
+    /* Estructura inválida pero real: ul > a > li — el padding visible va en el <a> */
+    .navbar-links > a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem 1.15rem;
+        border-radius: 8px;
+        transition: padding 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+    }
+
+    .navbar-links > a:hover {
+        padding: 1rem 1.65rem;
+        background-color: rgba(66, 153, 225, 0.16);
+    }
+
+    .navbar-links > a:hover li.menu {
+        background-color: transparent;
+    }
 }
 
 #logo {
@@ -810,9 +845,7 @@ p {
     }
 
     .menu {
-        height: 5rem;
         width: 100%;
-
     }
 
     .navbar {
@@ -828,10 +861,12 @@ p {
         position: absolute;
         top: 0;
         left: 0;
-        background: #333333d5;
+        background: rgba(26, 54, 93, 0.96);
+        backdrop-filter: blur(12px);
         justify-content: center;
         align-items: center;
         z-index: 1000;
+        gap: 0.35rem;
     }
 
     .navbar-links.active {
@@ -844,17 +879,39 @@ p {
         right: 1.4rem;
         font-size: 2rem;
         cursor: pointer;
-        color: #fff;
+        color: #f1f5f9;
         padding: 1rem;
+        border-radius: 8px;
+        transition: background-color 0.2s ease, color 0.2s ease;
     }
 
+    .navbar-close:hover,
+    .navbar-close:focus-visible {
+        color: #ffffff;
+        background-color: rgba(66, 153, 225, 0.25);
+    }
 
     .navbar-links a {
-        padding: 1rem;
+        padding: 1rem 1.5rem;
         border: none;
         text-align: center;
         width: 100%;
+        max-width: 20rem;
         margin: 0;
+        color: #f1f5f9;
+        border-radius: 10px;
+        transition: color 0.2s ease, background-color 0.2s ease;
+    }
+
+    .navbar-links a:hover,
+    .navbar-links a:focus-visible {
+        color: #ffffff;
+        background-color: rgba(66, 153, 225, 0.38);
+    }
+
+    .navbar-links a:hover li.menu,
+    .navbar-links a:focus-visible li.menu {
+        background-color: transparent;
     }
 
 }
