@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const scheduleButton = document.getElementById('scheduleButton');
     if (scheduleButton) {
         scheduleButton.addEventListener('click', function() {
-            window.open('https://calendly.com/hijosdelmarsurftrip/30min', '_blank');
+            window.open('https://calendly.com/mariano-hijosdelmarsurf/30min', '_blank');
         });
     }
 
@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactScheduleButton = document.querySelector('.contact-info .btn-secondary');
     if (contactScheduleButton) {
         contactScheduleButton.addEventListener('click', function() {
-            window.open('https://calendly.com/hijosdelmarsurftrip/30min', '_blank');
+            window.open('https://calendly.com/mariano-hijosdelmarsurf/30min', '_blank');
         });
     }
 
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const quoteButton = document.querySelector('.pricing-card .btn-primary');
     if (quoteButton) {
         quoteButton.addEventListener('click', function() {
-            window.open('https://calendly.com/hijosdelmarsurftrip/chicama-retreat-custom-quote-consultation', '_blank');
+            window.open('https://calendly.com/mariano-hijosdelmarsurf/30min', '_blank');
         });
     }
 
