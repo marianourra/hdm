@@ -152,8 +152,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Obtener los valores del formulario
         const formData = {
+            to_email: 'mariano@hijosdelmarsurf.com',
             from_name: document.getElementById('name').value,
             from_email: document.getElementById('email').value,
+            reply_to: document.getElementById('email').value,
             message: document.getElementById('message').value,
             to_name: 'Hijos del Mar'
         };

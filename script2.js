@@ -106,16 +106,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form submission
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Add your form submission logic here
-            contactForm.reset();
-        });
-    }
-
     // Book button functionality
     const bookButton = document.getElementById('bookButton');
     if (bookButton) {
@@ -288,6 +278,9 @@ document.querySelectorAll('.faq-question').forEach(question => {
     });
 });
 
+// Recipient for retreat/contact form notifications (must match EmailJS template "To email" if using {{to_email}})
+const RETREAT_NOTIFICATION_EMAIL = 'mariano@hijosdelmarsurf.com';
+
 // Initialize EmailJS
 (function() {
     emailjs.init("VusqYbeKiY0F4UlTl");
@@ -310,10 +303,12 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
     // Prepare template parameters
     const templateParams = {
+        to_email: RETREAT_NOTIFICATION_EMAIL,
         to_name: "Hijos del Mar Team",
         from_name: contactName,
         company: companyName,
         from_email: email,
+        reply_to: email,
         phone: phone,
         message: `Company: ${companyName}\nContact Name: ${contactName}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`
     };
