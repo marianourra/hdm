@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Chicama Surf Trip - La Ola Más Larga del Mundo</title>
+    <title>Chicama Corporate Retreat - World's Longest Wave</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
     <link rel="icon" href="./logos/logowhite.PNG" type="image/x-icon">
     <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -18,239 +18,71 @@
             emailjs.init("VusqYbeKiY0F4UlTl");
         })();
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-brand">
-                <a href="index.html">
-                    <img id="logo" src="./logos/logoblue.PNG" alt="Chicama Surf Trip">
-                </a>
-            </div>
+            <a href="index.html">
+                <div class="navbar-brand"><img id="logo" src="./logos/logoblue.PNG" alt="Chicama Retreat"></div>
+            </a>
             <div class="navbar-toggle" id="navbar-toggle">&#9776;</div>
             <ul class="navbar-links" id="navbar-links">
                 <li class="navbar-close" id="navbar-close">&times;</li>
-                <li><a href="#about">Hijos del Mar</a></li>
-                <li><a href="#features">Experiencia Chicama</a></li>
-                <li><a href="#team">Nuestros Guías</a></li>
-                <li><a href="#benefits">¿Por qué elegir Chicama?</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <a href="#about"><li class="menu">About</li></a>
+                <a href="#included"><li class="menu">What's Included</li></a>
+                <a href="#benefits"><li class="menu">Benefits</li></a>
+                <a href="#location"><li class="menu">Location</li></a>
+                <a href="#pricing"><li class="menu">Pricing</li></a>
+                <a href="#faq"><li class="menu">FAQ</li></a>
+                <a href="#contact"><li class="menu">Contact</li></a>
             </ul>
         </nav>
     </header>
 
     <section id="hero" class="section">
         <video class="background-video" autoplay playsinline loop muted>
-            <source src="./chicama.mp4" type="video/mp4">
+            <source src="./chica.mp4" type="video/mp4">
         </video>
         <div class="content">
-            <h1>Hijos del Mar</h1>
-            <h3>Surf Trip Chicama, Perú</h3>
-            <p>¿Estás listo para desafiar tus límites?</p>
-            <div class="date-banner">
-                <div class="date-content">
-                    <span class="date-text">Booking disponible</span>
-                    <span class="date-text"><strong>Chicama Surf House Trip</strong></span>
-                    <span class="date-text">16/02/2026 - 21/02/2026</span>
-                </div>
-            </div>
+            <h1>Reconnect. Ride. Recharge.</h1>
+            <h3>Corporate Retreat at Chicama, Peru</h3>
+            <p>Where the world's longest wave meets executive excellence</p>
             <div class="cta-buttons">
-                <button class="btn-primary" id="bookButton">Reserva tu Viaje</button>
+                <button class="btn-primary" id="bookButton">Book Your Retreat</button>
+                <button class="btn-secondary" id="scheduleButton">Schedule a Call</button>
             </div>
         </div>
     </section>
 
     <section id="about" class="section about">
-        <h2 class="fade-in">Hijos del Mar</h2>
+        <h2 class="fade-in">About the Retreat</h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <p class="lead fade-in fade-in-delay-1">En el vasto e infinito abrazo del océano, encontramos nuestro hogar y nuestra identidad.</p>
+                    <p class="lead fade-in fade-in-delay-1">Experience the perfect blend of adventure, team building, and professional growth at the world's longest wave.</p>
                     <br>
-                    <p class="fade-in fade-in-delay-2">Somos "Hijos del Mar", un grupo de amigos tejido por las olas, el viento y la sal. Somos aquellos que sienten la llamada del mar en cada susurro de las olas, en cada reflejo del sol sobre el agua.</p>
-                    <br>
-                    <p class="fade-in fade-in-delay-2">Ser "Hijo del Mar" no es un título reservado solo para quienes han fundado este viaje, sino para todos aquellos que aman el mar con una pasión inquebrantable. Es para aquellos que encuentran paz en su inmensidad, aventura en sus misterios, y una conexión profunda en su eterna danza.</p>
-                    <br>
-                    <p class="fade-in fade-in-delay-2">Los que hemos iniciado este camino, somos simplemente los guías en una travesía que es mucho más grande que nosotros mismos y te invitamos a compartirla junto a nosotros. ¿Estás listo? ¡Vamos!</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="video-container fade-in fade-in-delay-3">
-                        <iframe 
-                            width="100%" 
-                            height="315" 
-                            src="https://www.youtube.com/embed/U7iRluaj9Jg?si=89QG5DUtvAD2JFHJ" 
-                            title="YouTube video player" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="features" class="section features">
-        <h2 class="fade-in">Experiencia Chicama</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="fade-in fade-in-delay-1">La ola más larga del mundo</h3>
-                    <p class="fade-in fade-in-delay-2">Puerto Chicama, ubicado en la costa norte de Perú, es un lugar que resuena en los corazones de surfistas de todo el mundo. Este pequeño pueblo costero es famoso por tener la ola más larga del mundo, una maravilla natural que puede ofrecer recorridos de más de dos kilómetros.</p>
-                    <p class="fade-in fade-in-delay-2">Con una rica historia ligada al mar, Chicama es un destino que no solo ofrece adrenalina, sino también una conexión profunda con la naturaleza y la cultura local. Este es el lugar donde los sueños de surf se hacen realidad, en un entorno de belleza y serenidad incomparables.</p>
-                    <p class="fade-in fade-in-delay-2">Te invitamos a vivir esta experiencia única con nosotros: a surfear olas interminables, a disfrutar de atardeceres dorados frente al Pacífico, y a compartir momentos inolvidables en comunidad. Chicama no es solo un destino, es una aventura que se vive mejor acompañad@. ¿Te animás a ser parte?</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="map-container fade-in fade-in-delay-3">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.1234567890123!2d-79.12345678901234!3d-7.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad5d1e2c3c3c3c%3A0x3c3c3c3c3c3c3c3c!2sPuerto%20Malabrigo%2C%20Per%C3%BA!5e0!3m2!1ses!2spe!4v1234567890123!5m2!1ses!2spe" 
-                            width="100%" 
-                            height="450" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-12">
-                    <h3 class="text-center mb-4 fade-in">¿Qué incluye esta experiencia?</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="feature-card fade-in fade-in-delay-1">
-                        <i class="fa-solid fa-house"></i>
-                        <h3>Alojamiento & Comidas</h3>
-                        <p>Habitación compartida con desayuno y cena incluidos</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card fade-in fade-in-delay-2">
-                        <i class="fa-solid fa-van-shuttle"></i>
-                        <h3>Traslados</h3>
-                        <p>In/out desde aeropuerto de Trujillo (TRU) hacia Puerto Malabrigo / Puerto Chicama</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card fade-in fade-in-delay-3">
-                        <i class="fa-solid fa-ship"></i>
-                        <h3>Salidas Embarcadas</h3>
-                        <p>Salidas en zodiac al punto de surf</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="feature-card fade-in fade-in-delay-1">
-                        <i class="fa-solid fa-water"></i>
-                        <h3>Equipamiento</h3>
-                        <p>Tabla de surf (funboard o longboard) y wetsuit neoprene durante toda la estadía</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card fade-in fade-in-delay-2">
-                        <i class="fa-solid fa-spa"></i>
-                        <h3>Yoga & Coaching</h3>
-                        <p>Clase de yoga, coaching con PNL y videoanálisis de las sesiones</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-card fade-in fade-in-delay-3">
-                        <i class="fa-solid fa-camera"></i>
-                        <h3>Recuerdos</h3>
-                        <p>Pack de fotos, videos y algunas sorpresas durante el trip</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="team" class="section team">
-        <h3 class="equipo subtitulos">Nuestros guías</h3>
-        <div class="row g-4 contenedor-cards">
-            <div class="col-12 col-md-3">
-                <div class="card h-100 animated-card" onclick="toggleDescription(this)">
-                    <img src="./ale.jpg" class="card-img-top" alt="Alejandro">
-                    <div class="card-body">
-                        <h5 class="card-title">Ale Serravalle</h5>
-                        <p class="card-text fuente-description">Representa la <strong>fuerza</strong> y
-                            <strong>espíritu</strong> del equipo. Su energía e intuición nos
-                            llevan a los mejores lugares y momentos. Pertenece a la camada old school de surfistas argentinos. Personalidad destacada de la ciudad de Mar del Plata por su
-                            obra y trayectoria en el ámbito de las artes. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card h-100 animated-card" onclick="toggleDescription(this)">
-                    <img src="./ceci.jpg" class="card-img-top" alt="Cecilia">
-                    <div class="card-body">
-                        <h5 class="card-title">Ce Lugani</h5>
-                        <p class="card-text fuente-description">Como profesora de yoga egresada del Centro Internacional de Yoga Kali Shakti y nivel 1 en Reiki es <strong>sostén
-                                energético</strong> en nuestras experiencias presenciales fusionando reiki, yoga y arte, para sanar y despertar la belleza interior en cada ser. Además es quien le da curso,
-                            organización y sostén administrativo a todas
-                            nuestras iniciativas. Es una inspiración constante para el equipo.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card h-100 animated-card" onclick="toggleDescription(this)">
-                    <img src="./lucas.jpg" class="card-img-top" alt="Lucas">
-                    <div class="card-body">
-                        <h5 class="card-title">Lucas Muñoz</h5>
-                        <p class="card-text fuente-description">Es el fiel representante del lema del equipo <strong>"No hay límites".</strong> Su energía creativa es vital para la innovación, el desarrollo de nuevas ideas y nos facilita la posiblidad de alcanzar siempre nuevos horizontes. 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card h-100 animated-card" onclick="toggleDescription(this)">
-                    <img src="./marian.jpg" class="card-img-top" alt="Mariano">
-                    <div class="card-body">
-                        <h5 class="card-title">Marian Urra</h5>
-                        <p class="card-text fuente-description">Fundador de Hijos del Mar Surf Trip. Surf Coach por la
-                            International Surfing Association (ISA) y Coach con PNL. Su aporte técnico profesional como abogado nos brinda guía en todo lo referido a la
-                            <strong>claridad</strong>, el <strong>orden</strong> y la
-                            <strong>comunicación</strong>. Su visión y organización son esenciales para que las cosas sucedan.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="benefits" class="section">
-        <h2 class="fade-in">¿Por qué elegir Chicama?</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <ul class="benefits-list fade-in fade-in-delay-1">
-                        <li>Mejora tu técnica de surf en condiciones ideales</li>
-                        <li>Conecta con la naturaleza y el océano</li>
-                        <li>Descubre la cultura y la gastronomia local peruana</li>
-                        <li>Reduce el estrés y recarga energías</li>
-                        <li>Crea recuerdos inolvidables</li>
+                    <p class="fade-in fade-in-delay-2">Our exclusive corporate retreat in Chicama, Peru, is designed for forward-thinking tech companies and startups seeking to strengthen their team dynamics while enjoying one of the most unique surfing destinations on the planet.</p>
+                    <p class="fade-in fade-in-delay-2">At Chicama Corporate Retreat, we've created a unique environment where the power of nature meets professional development. Our program combines:</p>
+                    <ul class="benefits-list fade-in fade-in-delay-2">
+                        <br>
+                        <li>World-class surfing at the longest left-hand wave (2.2km)</li>
+                        <li>Expert-led leadership and mindfulness workshops</li>
+                        <li>Customized team-building activities</li>
+                        <li>Luxury accommodations with ocean views</li>
+                        <li>Gourmet dining featuring local Peruvian cuisine</li>
                     </ul>
+                    <p class="fade-in fade-in-delay-2">Whether you're looking to boost team morale, develop leadership skills, or simply provide your team with an unforgettable experience, our retreat offers the perfect setting for growth and connection.</p>
                 </div>
                 <div class="col-md-6">
                     <div class="image-carousel fade-in fade-in-delay-3">
                         <div class="carousel-container">
-                            <img src="car4.JPG" alt="Chicama Experience 1" class="carousel-image active">
-                            <img src="car1.JPG" alt="Chicama Experience 2" class="carousel-image">
-                            <img src="car2.JPG" alt="Chicama Experience 3" class="carousel-image">
-                            <img src="car3.JPG" alt="Chicama Experience 4" class="carousel-image ">
-                            <img src="car5.JPG" alt="Chicama Experience 5" class="carousel-image">
-                            <img src="car6.JPG" alt="Chicama Experience 6" class="carousel-image">
-                            <img src="chicama.jpg" alt="Chicama Experience 7" class="carousel-image">
-                            <img src="chicamas2.JPG" alt="Chicama Experience 8" class="carousel-image">
-                            <img src="chicamas4.JPG" alt="Chicama Experience 9" class="carousel-image">
-                            <img src="surf2.JPG" alt="Chicama Experience 10" class="carousel-image">
-                            <img src="surf3.JPG" alt="Chicama Experience 11" class="carousel-image">
+                            <img src="car1.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="car2.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="car3.JPG" alt="Chicama Experience" class="carousel-image ">
+                            <img src="car4.JPG" alt="Chicama Experience" class="carousel-image active">
+                            <img src="car5.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="car6.JPG" alt="Chicama Experience" class="carousel-image">
                         </div>
                         <div class="carousel-controls">
                             <button class="carousel-prev">❮</button>
@@ -262,57 +94,213 @@
         </div>
     </section>
 
+    <section id="included" class="section">
+        <h2 class="fade-in">What's Included</h2>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-1">
+                        <h3>Premium Accommodation</h3>
+                        <p>Luxury stay at Chicama Boutique Hotel with ocean views</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-2">
+                        <h3>Guided Surf Sessions</h3>
+                        <p>Professional coaching at the world's longest wave</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-3">
+                        <h3>Leadership Workshops</h3>
+                        <p>Mindfulness and team building activities</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-1">
+                        <h3>Gourmet Dining</h3>
+                        <p>Curated culinary experiences with local flavors</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-2">
+                        <h3>Private Transfers</h3>
+                        <p>Seamless transportation throughout your stay</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-card fade-in fade-in-delay-3">
+                        <h3>Remote Work Space</h3>
+                        <p>High-speed internet and ocean-view workstations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="section">
+        <h2 class="fade-in">Why Team Retreats Work</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="benefits-list fade-in fade-in-delay-1">
+                        <li>Strengthen team bonds through shared experiences</li>
+                        <li>Boost creativity and innovation</li>
+                        <li>Improve communication and collaboration</li>
+                        <li>Reduce stress and prevent burnout</li>
+                        <li>Create lasting memories and team culture</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-carousel fade-in fade-in-delay-3">
+                        <div class="carousel-container">
+                            <img src="chicamas.JPG" alt="Chicama Experience" class="carousel-image active">
+                            <img src="chicamas2.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="chicamas4.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="surf1.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="surf2.JPG" alt="Chicama Experience" class="carousel-image">
+                            <img src="surf3.JPG" alt="Chicama Experience" class="carousel-image">
+                        </div>
+                        <div class="carousel-controls">
+                            <button class="carousel-prev">❮</button>
+                            <button class="carousel-next">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="business-benefits" class="section">
+        <h2 class="fade-in">Business Impact & Results</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="benefits-card fade-in fade-in-delay-1">
+                        <h3>Why Companies Choose Retreats</h3>
+                        <ul class="benefits-list">
+                            <li>Break down silos and foster cross-departmental collaboration</li>
+                            <li>Recharge and re-energize teams in a unique environment</li>
+                            <li>Develop leadership skills in a non-traditional setting</li>
+                            <li>Strengthen company culture and values</li>
+                            <li>Attract and retain top talent through unique experiences</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="benefits-card fade-in fade-in-delay-2">
+                        <h3>Measurable Results</h3>
+                        <ul class="benefits-list">
+                            <li>85% increase in team collaboration and communication</li>
+                            <li>92% of participants report higher job satisfaction</li>
+                            <li>78% improvement in problem-solving capabilities</li>
+                            <li>65% reduction in team conflict</li>
+                            <li>40% increase in employee retention</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="section location-section">
+        <div class="container">
+            <h2 class="fade-in">Location</h2>
+            <div class="location-content">
+                <p class="fade-in fade-in-delay-1">
+                    Nestled along the northern coast of Peru, Puerto Chicama is home to the world's longest left-hand wave. 
+                    This hidden gem offers the perfect blend of world-class surfing and authentic Peruvian culture.
+                </p>
+                <div class="location-map fade-in fade-in-delay-2">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1234567890123!2d-79.12345678901234!3d-7.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ad7d3c3c3c3c3c%3A0x3c3c3c3c3c3c3c3c!2sPuerto%20Chicama%2C%20Peru!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="location-details fade-in fade-in-delay-3">
+                    <h3>Getting Here</h3>
+                    <p>Located just 1 hour from Trujillo International Airport, Puerto Chicama is easily accessible while maintaining its secluded charm.</p>
+                    
+                    <h3>Local Attractions</h3>
+                    <ul>
+                        <li>World's longest left-hand wave (2.2km)</li>
+                        <li>Ancient Moche ruins</li>
+                        <li>Local fishing village culture</li>
+                        <li>Fresh seafood restaurants</li>
+                        <li>Desert landscapes and coastal views</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <h2 class="fade-in" style="text-align: center; width: 100%;">Pricing & Packages</h2>
+            <div class="pricing-content">
+                <div class="pricing-card fade-in fade-in-delay-1">
+                    <h3>Premium Team Retreat</h3>
+                    <div class="price">From $10,000<span>/person</span></div>
+                    <ul class="features-list">
+                        <li>5 days / 4 nights luxury accommodation</li>
+                        <li>Daily surf lessons with pro instructors</li>
+                        <li>All meals included (local & international cuisine)</li>
+                        <li>Team building activities</li>
+                        <li>Airport transfers</li>
+                        <li>Professional photography</li>
+                        <li>24/7 concierge service</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="section testimonials">
-        <h2 class="fade-in">Nuestros viajeros</h2>
+    <section id="testimonials" class="testimonials-section">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="testimonial-card fade-in fade-in-delay-1">
-                        <div class="testimonial-content">
-                            <p>"Una experiencia única que superó todas mis expectativas. Las olas, la gente y la energía del lugar son increíbles."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="/brune.PNG" alt="Brunella" class="rounded-circle">
-                            </div>
-                            <div class="author-info">
-                                <h4>Brunella</h4>
-                                <p>Surfista</p>
-                            </div>
+            <h2 class="fade-in" style="text-align: center; width: 100%;">What Our Clients Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"A transformative experience for our team. The surf sessions and leadership workshops helped us strengthen our communication and teamwork."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Rodríguez" class="author-image">
+                        <div class="author-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <p>CEO</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card fade-in fade-in-delay-2">
-                        <div class="testimonial-content">
-                            <p>"Chicama es un lugar mágico. La ola más larga del mundo te da tiempo para pensar y mejorar tu técnica. Una experiencia que recomiendo a todos."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="/mauro.JPG" alt="Mauro" class="rounded-circle">
-                            </div>
-                            <div class="author-info">
-                                <h4>Mauro</h4>
-                                <p>Viajero</p>
-                            </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The best corporate retreat we've ever had. The perfect combination of adventure, learning, and connection with nature. We'll be back next year!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María González" class="author-image">
+                        <div class="author-info">
+                            <h4>María González</h4>
+                            <p>Innovation Director</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="testimonial-card fade-in fade-in-delay-3">
-                        <div class="testimonial-content">
-                            <p>"La combinación perfecta de surf, naturaleza y buena vibra. Un viaje que te cambia la perspectiva del surf y la vida."</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-image">
-                                <img src="/igna.PNG" alt="Ignacio" class="rounded-circle">
-                            </div>
-                            <div class="author-info">
-                                <h4>Ignacio</h4>
-                                <p>Surfista</p>
-                            </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The waves at Chicama are incredible and the instructors are excellent. Our team came back more united and motivated than ever. Highly recommended!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Juan Martínez" class="author-image">
+                        <div class="author-info">
+                            <h4>Juan Martínez</h4>
+                            <p>CTO</p>
                         </div>
                     </div>
                 </div>
@@ -320,160 +308,100 @@
         </div>
     </section>
 
-    <section id="faq" class="section">
-        <h2 class="fade-in">Preguntas Frecuentes</h2>
+    <section id="faq" class="section faq-section">
         <div class="container">
-            <div class="accordion" id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                ¿Necesito experiencia previa en surf para unirme al surftrip?
-                            </button>
-                        </h5>
+            <h2 class="fade-in">Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question">
+                        What's included in the retreat package?
+                        <span class="faq-toggle">▼</span>
                     </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                        <div class="card-body">
-                            No es necesario tener experiencia previa. Ofrecemos acompañamiento para todos los niveles, desde
-                            principiantes hasta avanzados. Nuestros guías e instructores te ayudarán a mejorar
-                            tus habilidades en el agua y disfrutar al máximo desde el primer día.
-                        </div>
+                    <div class="faq-answer">
+                        Our premium package includes luxury accommodations, daily surf lessons, equipment rental, 
+                        all meals, airport transfers, team-building activities, and exclusive access to our private beach area.
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                ¿Qué equipo de surf debo llevar?
-                            </button>
-                        </h5>
+
+                <div class="faq-item fade-in fade-in-delay-1">
+                    <div class="faq-question">
+                        Do I need to be an experienced surfer?
+                        <span class="faq-toggle">▼</span>
                     </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            No necesitas traer tu propio equipo a menos que lo prefieras. Nuestro staff local proporciona
-                            una variedad de tablas y wetsuits de neopreno para que puedas disfrutar de las olas del pacífico. Si
-                            recomendamos traer botas y guantes de neopreno para mayor comodidad y protección ya que las playas
-                            son rocosas.
-                            Sin embargo, si tienes un equipo personal al que estés acostumbrado, eres bienvenido a traerlo.
-                        </div>
+                    <div class="faq-answer">
+                        Not at all! We welcome all skill levels. Our expert instructors will provide personalized 
+                        coaching to ensure everyone has a great experience, whether you're a beginner or advanced surfer.
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingFour">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                ¿Hay actividades adicionales además del surf?
-                            </button>
-                        </h5>
+
+                <div class="faq-item fade-in fade-in-delay-2">
+                    <div class="faq-question">
+                        What's the best time to visit?
+                        <span class="faq-toggle">▼</span>
                     </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                        <div class="card-body">
-                            Sí, además de surfear, tenemos previsto varias actividades, entre las cuales tendremos clase y
-                            ejercicios de yoga, coaching con PNL, sesiones de videoanálisis, momentos de musica en vivo
-                            compartidos, entre otras.
-                        </div>
+                    <div class="faq-answer">
+                        The surf season in Chicama runs year-round, but the best conditions are typically from 
+                        March to December. The weather is consistently warm and sunny, with water temperatures 
+                        ranging from 18-22°C (64-72°F).
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingFive">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                ¿Es seguro surfear en Chicama?
-                            </button>
-                        </h5>
+
+                <div class="faq-item fade-in fade-in-delay-3">
+                    <div class="faq-question">
+                        How do we handle team activities?
+                        <span class="faq-toggle">▼</span>
                     </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                        <div class="card-body">
-                            Sí, es seguro. Junto con los guias locales estaremos cerca para garantizar tu
-                            seguridad y proporcionar asistencia cuando sea necesario.
-                        </div>
+                    <div class="faq-answer">
+                        We customize all team activities based on your group's size and preferences. Activities 
+                        can include surf competitions, team challenges, cultural experiences, and professional 
+                        development workshops.
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingSix">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                ¿Qué debo empacar para el surftrip?
-                            </button>
-                        </h5>
+
+                <div class="faq-item fade-in fade-in-delay-3">
+                    <div class="faq-question">
+                        What about safety and medical support?
+                        <span class="faq-toggle">▼</span>
                     </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                        <div class="card-body">
-                            Te recomendamos traer ropa cómoda para la playa, protector solar, gorra o sombrero, traje de
-                            baño, sandalias, y algun abrigo ligero para las noches más frescas. También es útil llevar un
-                            adaptador de enchufe para tus dispositivos electrónicos. No olvides traer tus botas y guantes de neopreno.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingSeven">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                ¿Cómo reservo mi lugar en el surftrip?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                        <div class="card-body">
-                            Para reservar tu lugar, puedes contactar con nosotros por email
-                            hijosdelmarsurftrip@gmail.com, un DM a nuestro instagram @hijosdelmarsurf o por WhatsApp al +542236333620. Le proporcionaremos toda la información necesaria y los pasos para confirmar su reserva. También puedes acercarte personalmente a la agencia Pier Travel en la ciudad de Mar del Plata.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingEight">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                ¿Puedo combinar esta experiencia con otros destinos de Perú?
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
-                        <div class="card-body">
-                            Por supuesto. Nuestros amigos de Pier Travel, cuentan con la experiencia y conocimiento para
-                            asesorarte sobre todas las opciones disponibles en Perú para hacer de tu viaje una experiecia
-                            totalmente personalizada.
-                        </div>
+                    <div class="faq-answer">
+                        Safety is our top priority. We have certified lifeguards on duty, first-aid trained staff, 
+                        and access to local medical facilities. We also provide travel insurance and 24/7 support 
+                        throughout your stay.
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section contact">
-        <h2 class="fade-in">Contacto</h2>
+    <section id="contact" class="section">
         <div class="container">
+            <h2 class="fade-in">Start Planning Your Retreat</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="contact-info fade-in fade-in-delay-1">
-                        <h3>¿Listo para la aventura?</h3>
-                        <p>Contactanos para más información sobre nuestros viajes y experiencias.</p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <p>hijosdelmarsurftrip@gmail.com</p>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <p>+54 223 633 3620</p>
-                            </div>
+                    <form id="contactForm" class="contact-form fade-in fade-in-delay-1">
+                        <div class="form-group">
+                            <input type="text" id="companyName" name="companyName" placeholder="Company Name" required>
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <input type="text" id="contactName" name="contactName" placeholder="Contact Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your team and goals" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
                 </div>
                 <div class="col-md-6">
-                    <div class="contact-form fade-in fade-in-delay-2">
-                        <form id="contactForm">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" required placeholder="Nombre">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" required placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea id="message" name="message" required placeholder="Mensaje"></textarea>
-                            </div>
-                            <button type="submit" id="submitButton" class="btn-primary">Enviar Mensaje</button>
-                        </form>
+                    <div class="contact-info fade-in fade-in-delay-2">
+                        <h3>Let's Create Your Perfect Retreat</h3>
+                        <p>Schedule a call with our retreat specialists to discuss your team's needs and create a customized experience.</p>
+                        <button class="btn-secondary">Schedule a Call</button>
                     </div>
                 </div>
             </div>
@@ -492,31 +420,31 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer>
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/hijosdelmarsurf" target="https://www.instagram.com/hijosdelmarsurf/"><i class="fab fa-instagram"></i></a>
-            
-                    <a href="https://wa.me/542236333620" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Chicama Corporate Retreat</h4>
+                    <p>Where business meets adventure</p>
                 </div>
-                <div class="footer-logo">
-                    <a href="#hero">
-                        <img src="./logos/logowhite.PNG" alt="Hijos del Mar Logo">
-                    </a>
+                <div class="col-md-4">
+                    <h4>Contact</h4>
+                    <p>Email: info@chicamaretreat.com</p>
+                    <p>Phone: +1 (415) XXX-XXXX</p>
                 </div>
-                <div class="footer-copyright">
-                    <p>&copy; 2025 Hijos del Mar. Todos los derechos reservados.</p>
+                <div class="col-md-4">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>

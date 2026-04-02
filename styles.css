@@ -16,13 +16,13 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
     color: var(--text-color);
     line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 700;
     color: var(--primary-color);
 }
@@ -820,11 +820,11 @@ a i.fa-envelope:hover {
 }
 
 .card-title {
-    font-family: "DM Serif Text", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
 }
 
 .card-title {
-    font-family: "DM Serif Text", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
 }
 
 .card img {
@@ -931,7 +931,7 @@ a i.fa-envelope:hover {
 }
 
 .subtitulos {
-    font-family: "DM Serif Text", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
 }
 
 
@@ -1939,7 +1939,7 @@ html {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
 }
 
 .date-icon {

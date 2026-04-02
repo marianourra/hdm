@@ -16,13 +16,13 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', system-ui, -apple-system, sans-serif;
     color: var(--text-color);
     line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 700;
     color: var(--primary-color);
 }
@@ -435,122 +435,122 @@ p {
 }
 
 .merriweather-light {
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
 .merriweather-regular {
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .merriweather-bold {
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 .merriweather-black {
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 900;
     font-style: normal;
 }
 
 .merriweather-light-italic {
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 300;
     font-style: italic;
 }
 
 .merriweather-regular-italic {
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 400;
     font-style: italic;
 }
 
 .merriweather-bold-italic {
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 700;
     font-style: italic;
 }
 
 .merriweather-black-italic {
-    font-family: "Merriweather", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 900;
     font-style: italic;
 }
 
 
 .roboto-thin {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 100;
     font-style: normal;
 }
 
 .roboto-light {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
 .roboto-regular {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .roboto-medium {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
 .roboto-bold {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 700;
     font-style: normal;
 }
 
 .roboto-black {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 900;
     font-style: normal;
 }
 
 .roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 100;
     font-style: italic;
 }
 
 .roboto-light-italic {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 300;
     font-style: italic;
 }
 
 .roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 400;
     font-style: italic;
 }
 
 .roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 500;
     font-style: italic;
 }
 
 .roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 700;
     font-style: italic;
 }
 
 .roboto-black-italic {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 900;
     font-style: italic;
 }
@@ -558,19 +558,19 @@ p {
 
 
 .dm-serif-text-regular {
-    font-family: "DM Serif Text", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .caveat {
-    font-family: "Caveat";
+    font-family: 'Poppins', system-ui, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
 
 .dm-serif-text-regular-italic {
-    font-family: "DM Serif Text", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 400;
     font-style: italic;
 }
@@ -744,7 +744,7 @@ p {
     text-align: justify;
     margin-top: 3rem;
     margin-bottom: 4rem;
-    font-family: Roboto;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-size: 1.1rem;
 }
 
@@ -756,7 +756,7 @@ p {
     margin-left: 3%;
     text-align: justify;
     margin-top: 3rem;
-    font-family: Roboto;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-size: 1.1rem;
 }
 
@@ -768,7 +768,7 @@ p {
     margin-left: 3%;
     text-align: justify;
     margin-top: 3rem;
-    font-family: Roboto;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-size: 1.1rem;
 }
 
@@ -872,7 +872,7 @@ p {
 
 
 .content {
-    font-family: "DM Serif Text", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-weight: 400;
     font-style: normal;
     position: relative;
@@ -1103,12 +1103,12 @@ a i.fa-envelope:hover {
 
 
 .card-title {
-    font-family: "DM Serif Text", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
 }
 
 
 .card-title {
-    font-family: "DM Serif Text", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
 }
 
 .card img {
@@ -1219,7 +1219,7 @@ a i.fa-envelope:hover {
 }
 
 .subtitulos {
-    font-family: "DM Serif Text", serif;
+    font-family: 'Poppins', system-ui, sans-serif;
 }
 
 
