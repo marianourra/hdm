@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
             from_email: document.getElementById('email').value,
             reply_to: document.getElementById('email').value,
             message: document.getElementById('message').value,
-            to_name: 'Hijos del Mar'
+            to_name: 'Almas del Mar'
         };
 
         // Enviar el email usando EmailJS

@@ -304,7 +304,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     // Prepare template parameters
     const templateParams = {
         to_email: RETREAT_NOTIFICATION_EMAIL,
-        to_name: "Hijos del Mar Team",
+        to_name: "Almas del Mar Team",
         from_name: contactName,
         company: companyName,
         from_email: email,
