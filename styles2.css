@@ -721,10 +721,12 @@ p {
         align-items: center;
         justify-content: flex-end;
         width: auto;
+        gap: 0.4rem;
     }
 
     .navbar-links li.menu {
         width: auto;
+        white-space: nowrap;
     }
 
     /* Estructura inválida pero real: ul > a > li — el padding visible va en el <a> */
@@ -732,13 +734,13 @@ p {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        padding: 0.7rem 1.15rem;
+        padding: 0.45rem 0.6rem;
+        font-size: 0.9rem;
         border-radius: 8px;
-        transition: padding 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+        transition: background-color 0.25s ease, color 0.25s ease;
     }
 
     .navbar-links > a:hover {
-        padding: 1rem 1.65rem;
         background-color: rgba(66, 153, 225, 0.16);
     }
 
@@ -748,8 +750,8 @@ p {
 }
 
 #logo {
-    height: 300%;
-    width: 30%;
+    height: 60px;
+    width: auto;
 }
 
 .home {
